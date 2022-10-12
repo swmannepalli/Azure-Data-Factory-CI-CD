@@ -33,8 +33,14 @@ We create each service twice listed below, one for Dev and one for Prod as the l
 		+ {youralias}-dev-server
 		+ {youralias}-prod-server
 	* Default values for rest of the settings <br />
+	
+5. **Create Azure Key Vaults**: Reference Link [Create Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) <br />
 
-
-S3 Browser: Download the S3 browser here.
+	* Create two Azure Key Vaults with the following naming convention:<br />
+		+ {youralias}-dev-kv --> This is created in dev resource group <br /> 
+		+ {youralias}-prod-kv --> This is created in prod resource group <br /> 
+	* Choose the region that is most appropriate to your current location
+	* Pricing tier - Standard
+	* Default values for rest of the settings <br />
 
 If you do not have the required permissions to fulfil these pre-requisites, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
