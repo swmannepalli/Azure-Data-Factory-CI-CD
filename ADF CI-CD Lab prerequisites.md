@@ -52,12 +52,28 @@ We create each service twice listed below, one for Dev and one for Prod as the l
 
 7. **Create Secrets in Azure Key Vaults** - Here, we will create two secrets, one to store ADLS credential and one to store Azure SQL DB connection string.
 	
-	* **Dev Environment (ADLS Secret)** - 
+	* **Dev Environment** - 
+		- **ADLS Secret**
 		+ To get connection string for storage account - Go to dev storage account created above, select Access Keys under Security + networking, click on show next to Connection string and copy the value.
 		+ Go to dev azure key vault created above and select secrets under Objects. Click on Generate/Import
 		+ Name - adlscredential
-		+ Secret Value - 
+		+ Secret Value - Paste the connection string value copied above and click on create.
+		- **Azure SQL DB Secret**
+		+ To get connection string for SQL DB - Go to dev SQL DB created above, select Connection strings under Settings and copy ADO.NET (Active Directory integrated authentication) value. Replace {your_username} with your user ID
+		+ Go to dev azure key vault created above and select secrets under Objects. Click on Generate/Import
+		+ Name - sqlconnectionstring
+		+ Secret Value - Paste the connection string value copied above and click on create.
 
-
+	* **Prod Environment** - 
+		- **ADLS Secret**
+		+ To get connection string for storage account - Go to prod storage account created above, select Access Keys under Security + networking, click on show next to Connection string and copy the value.
+		+ Go to prod azure key vault created above and select secrets under Objects. Click on Generate/Import
+		+ Name - adlscredential
+		+ Secret Value - Paste the connection string value copied above and click on create.
+		- **Azure SQL DB Secret**
+		+ To get connection string for SQL DB - Go to prod SQL DB created above, select Connection strings under Settings and copy ADO.NET (Active Directory integrated authentication) value. Replace {your_username} with your user ID
+		+ Go to prod azure key vault created above and select secrets under Objects. Click on Generate/Import
+		+ Name - sqlconnectionstring
+		+ Secret Value - Paste the connection string value copied above and click on create.
 
 If you do not have the required permissions to fulfil these pre-requisites or need assistance, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
