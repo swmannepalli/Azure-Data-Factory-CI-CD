@@ -42,5 +42,22 @@ We create each service twice listed below, one for Dev and one for Prod as the l
 	* Choose the region that is most appropriate to your current location
 	* Pricing tier - Standard
 	* Default values for rest of the settings <br />
+6. **Create Azure Data Factories** - Reference Link [Create Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)<br />
+	* Create two Azure Data Factories with the following naming convention:<br />
+		+ {youralias}-dev-df --> This is created in dev resource group <br /> 
+		+ {youralias}-prod-df --> This is created in prod resource group <br /> 
+	* Choose the region that is most appropriate to your current location
+	* Git Configuration - Check Configure Git later
+	* Default values for rest of the settings <br />
+
+7. **Create Secrets in Azure Key Vaults** - Here, we will create two secrets, one to store ADLS credential and one to store Azure SQL DB connection string.
+	
+	* **Dev Environment (ADLS Secret)** - 
+		+ To get connection string for storage account - Go to dev storage account created above, select Access Keys under Security + networking, click on show next to Connection string and copy the value.
+		+ Go to dev azure key vault created above and select secrets under Objects. Click on Generate/Import
+		+ Name - adlscredential
+		+ Secret Value - 
+
+
 
 If you do not have the required permissions to fulfil these pre-requisites or need assistance, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
