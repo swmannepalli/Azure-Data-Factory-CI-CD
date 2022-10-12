@@ -77,9 +77,9 @@ We create each service twice listed below, one for Dev and one for Prod as the l
 		+ Go to prod azure key vault created above and select secrets under Objects. Click on Generate/Import
 		+ Name - sqlconnectionstring
 		+ Secret Value - Paste the connection string value copied above and click on create. <br />
-		+ 
+		
 ADF should have access to Azure Key Vault to retrieve the secret value - Go to Access policies in Dev Key Vault and select create. Select All under Key and secret permissions and click on Next. Search for Dev ADF name and select it. Click Next and create. <br />
 
-	+ Repeat the same process to provide Prod ADF access to Prod Key Valut.<br />
++ Repeat the same process to provide Prod ADF access to Prod Key Valut.<br />
 	
 If you do not have the required permissions to fulfil these pre-requisites or need assistance, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
