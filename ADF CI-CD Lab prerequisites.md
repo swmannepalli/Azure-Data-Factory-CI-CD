@@ -22,7 +22,7 @@ We create each service twice listed below, one for Dev and one for Prod as the l
 	* Performance - Standard
 	* Redundancy - LRS
 	* Under Advanced - Leave everything to default and check Enable hierarchical namespace
-	* Default settings for rest of the tabs <br />
+	* Default values for rest of the settings <br />
 
 4. **Create Azure SQL Databases**: Reference Link [Create Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) <br />
 
@@ -32,7 +32,7 @@ We create each service twice listed below, one for Dev and one for Prod as the l
 	* Choose to create new server with the following name(s):<br />
 		+ {youralias}-dev-server
 		+ {youralias}-prod-server
-	* Choose the region that is most appropriate to your current location.
+	* Default values for rest of the settings <br />
 
 
 S3 Browser: Download the S3 browser here.
