@@ -5,8 +5,11 @@ In this workshop we work on implementing continuous integration and continuous d
 
 Azure Data Factory integrates with both Github and Azure DevOps Git for source control. For this lab, we're focussing on Azure DevOps Git. Main objective of source control is to have collaboration among developers, track changes and maintain history. 
 
-**Branching Terminology**
+**Source Control Terminology**
 
 1. **Working/Feature Branch** - This is a short lasting branch where each developer must create to update and save their pipelines and activities.
-2. **Main/Master Branch** - This is a long lasing branch and changes from feature branch are merged into this main branch. This is also referred as collaborative branch.
-3. 
+2. **Collaboration Branch** - This is a long lasing branch and changes from feature branch are merged into this branch. By default, it is main. This is also referred as collaborative branch.
+3. **Publish Branch** - Publishing related ARM templates are stored and updated in this branch. By default, it is adf_publish. Azure Data Factory can only have one publish branch at a time.
+4. **Pull Request** - In order to merge changes from feature branch to collaboration branch, we need to create pull request. This action helps to do code reviews, raise pull requests and merge changes to collaboration branch.
+5. **Commit** - Commit is used to save the changes to local repository. In ADF world, it is saving to local branch.
+
