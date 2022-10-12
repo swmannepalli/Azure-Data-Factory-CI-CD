@@ -34,7 +34,7 @@ We create each service twice listed below, one for Dev and one for Prod as the l
 		+ {youralias}-prod-server
 	* Default values for rest of the settings <br />
 	
-5. **Create Azure Key Vaults** -  Reference Link [Create Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) <br />
+5. **Create Azure Key Vaults** -  Credentials for ADLS and Azure SQL are stored here. Reference Link [Create Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) <br />
 
 	* Create two Azure Key Vaults with the following naming convention:<br />
 		+ {youralias}-dev-kv --> This is created in dev resource group <br /> 
