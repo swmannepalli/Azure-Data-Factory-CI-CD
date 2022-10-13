@@ -1,39 +1,109 @@
-
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "yourAlias": {
-      "type": "String"
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+	
+		"yourAlias": {
+		"type":"String"
+		},
+		"storageSku": 
+		{
+            "type": "string",
+            "defaultValue": "Standard_LRS",
+            "allowedValues": [
+                "Standard_LRS",
+                "Standard_ZRS",
+                "Standard_GRS",
+                "Standard_RAGRS"
+            ],
+            "metadata": {
+                "description": "Defines the type of storage account to use for the data lake store"
+            }
+        }
+	},
+    "variables": {
+        "storageAccountApiVersion": "[utils.apiVersion('Microsoft.Storage', 'storageAccounts')]",
+        "storageAccountName": "[concat(parameters('yourAlias'), 'devadls')]",
+        "storageAccountResourceId": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
     },
-    "storageAccountType": {
-      "type": "string",
-      "defaultValue": "Standard_LRS",
-      "allowedValues": [
-        "Standard_LRS",
-        "Standard_GRS",
-        "Standard_ZRS"        
-      ]
-    }
-  },
-  "resources": [
-    {
-      "type": "Microsoft.Storage/storageAccounts",
-      "name": "[parameters('yourAlias')]",
-      "apiVersion": "2022-05-01",
-      "location": "[resourceGroup().location]",
-      "properties": {
-        	"AccountType"="Standard_LRS"
+    "functions": [
+        {
+            "namespace": "utils",
+            "members": {
+                "apiVersion": {
+                    "parameters": [
+                        {
+                            "name": "providerNamespace",
+                            "type": "string"
+                        },
+                        {
+                            "name": "resourceType",
+                            "type": "string"
+                        }
+                    ],
+                    "output": {
+                        "type": "string",
+                        "value": "[providers(parameters('providerNamespace'), parameters('resourceType')).apiVersions[0]]"
+                    }
+                },
+                "uniqueName": {
+                    "parameters": [
+                        {
+                            "name": "yourAlias",
+                            "type": "string"
+                        },
+                        {
+                            "name": "resourceSuffix",
+                            "type": "string"
+                        }
+                    ],
+                    "output": {
+                        "type": "string",
+                        "value": "[concat(parameters('yourAlias'), uniqueString(resourceGroup().id), parameters('resourceSuffix'))]"
+                    }
+                }
+            }
+        }
+    ],
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "[variables('storageAccountApiVersion')]",
+            "location": "[resourceGroup().location]",
+            "name": "[variables('storageAccountName')]",
+            "kind": "StorageV2",
+            "sku": {
+                "name": "[parameters('storageSku')]"
+            },
+            "properties": {
+                "encryption": {
+                    "keySource": "Microsoft.Storage",
+                    "services": {
+                        "blob": {
+                            "enabled": true
+                        },
+                        "file": {
+                            "enabled": true
+                        }
+                    }
+                },
                 "isHnsEnabled": true,
                 "supportsHttpsTrafficOnly": true
-		
-      }
-    }
-  ],
-	"outputs": {
-		"storageAccountInfo": {
+            }
+        }
+    ],
+    "outputs": {
+	"storageAccountInfo": {
 			"value": "[reference(concat('Microsoft.Storage/storageAccounts/', parameters('yourAlias')),providers('Microsoft.Storage', 'storageAccounts').apiVersions[0])]",
 			"type" : "object"
 		}
-	}
+        "storageAccountName": {
+            "type": "string",
+            "value": "[variables('storageAccountName')]"
+        },
+        "storageAccountConnectionString": {
+            "type": "string",
+            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountResourceId'), variables('storageAccountApiVersion')).keys[0].value)]"
+        }
+    }
 }
