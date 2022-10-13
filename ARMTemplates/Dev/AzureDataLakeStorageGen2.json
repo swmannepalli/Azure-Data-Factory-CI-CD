@@ -94,9 +94,10 @@
     ],
     "outputs": {
 	"storageAccountInfo": {
-			"value": "[reference(concat('Microsoft.Storage/storageAccounts/', parameters('yourAlias')),providers('Microsoft.Storage', 'storageAccounts').apiVersions[0])]",
-			"type" : "object"
-		},
+		"type" : "object",
+		"value": "[reference(concat('Microsoft.Storage/storageAccounts/', parameters('yourAlias')),providers('Microsoft.Storage', 'storageAccounts').apiVersions[0])]"
+			
+	},
         "storageAccountName": {
             "type": "string",
             "value": "[variables('storageAccountName')]"
