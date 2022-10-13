@@ -24,17 +24,6 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "accountType": "[parameters('storageAccountType')]",
-		"encryption": {
-                    "keySource": "Microsoft.Storage",
-                    "services": {
-                        "blob": {
-                            "enabled": true
-                        },
-                        "file": {
-                            "enabled": true
-                        }
-                    }
-                },
                 "isHnsEnabled": true,
                 "supportsHttpsTrafficOnly": true
 		
