@@ -1,29 +1,7 @@
 {
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-        "yourAlias": {
-            "type": "string",
-            "minLength": 3,
-            "maxLength": 20,
-            "metadata": {
-                "description": "The prefix to use for resources within the resource group"
-            }
-        },
-        "storageSku": {
-            "type": "string",
-            "defaultValue": "Standard_LRS",
-            "allowedValues": [
-                "Standard_LRS",
-                "Standard_ZRS",
-                "Standard_GRS",
-                "Standard_RAGRS"
-            ],
-            "metadata": {
-                "description": "Defines the type of storage account to use for the data lake store"
-            }
-        }
-     },
+    "parameters": {},
     "variables": {
         "storageAccountApiVersion": "[utils.apiVersion('Microsoft.Storage', 'storageAccounts')]",
         "storageAccountName": "[concat(parameters('yourAlias'), 'devadls')]",
