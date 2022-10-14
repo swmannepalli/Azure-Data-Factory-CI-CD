@@ -1,16 +1,13 @@
 {
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-    "contentVersion": "0.0.0.1",
+    "contentVersion": "1.0.0.0",
     "parameters": {
-        "yourAlias": {
-            "type": "string",
-            "minLength": 3,
-            "maxLength": 20,
-            "metadata": {
-                "description": "The prefix to use for resources within the resource group"
-            }
-        },
-        "storageSku": {
+	
+		"yourAlias": {
+		"type":"String"
+		},
+		"storageSku": 
+		{
             "type": "string",
             "defaultValue": "Standard_LRS",
             "allowedValues": [
@@ -23,7 +20,7 @@
                 "description": "Defines the type of storage account to use for the data lake store"
             }
         }
-     },
+	},
     "variables": {
         "storageAccountApiVersion": "[utils.apiVersion('Microsoft.Storage', 'storageAccounts')]",
         "storageAccountName": "[concat(parameters('yourAlias'), 'prodadls')]",
@@ -95,14 +92,7 @@
             }
         }
     ],
-    "outputs": {
-        "storageAccountName": {
-            "type": "string",
-            "value": "[variables('storageAccountName')]"
-        },
-        "storageAccountConnectionString": {
-            "type": "string",
-            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountResourceId'), variables('storageAccountApiVersion')).keys[0].value)]"
-        }
-    }
+   "outputs": {
+		
+	}
 }
