@@ -12,12 +12,15 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		 + {youralias}-prod-rg <br />
 	* Choose the region that is most appropriate to your current location.
 	
-3. **Deploy resources in Dev Resource Group** - In this repo, go to Azure-Data-Factory-CI-CD/ARMTemplates/Dev/MainARMTemplate.json
+3. **Deploy resources in Dev Resource Group** - Click Deploy to Azure button to deploy resources in Dev Resource group created above. Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value. This is one of the parameters you need to provide as part of deployment.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FMainARMTemplate.json)
+	[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FMainARMTemplate.json)
 
+4. **Deploy resources in Prod Resource Group** - Click Deploy to Azure button to deploy resources in Prod Resource group created above. Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value. This is one of the parameters you need to provide as part of deployment.
 
-7. **Create Secrets in Azure Key Vaults** - Here, we will create two secrets, one to store ADLS credential and one to store Azure SQL DB connection string.
+	[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FProd%2FMainARMTemplate.json)
+
+5. **Update Secrets in Azure Key Vaults** - Here, we will create two secrets, one to store ADLS credential and one to store Azure SQL DB connection string.
 	
 	* **Dev Environment** - <br />
 		 **ADLS Secret**
