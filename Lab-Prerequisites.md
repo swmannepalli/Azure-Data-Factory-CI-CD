@@ -11,26 +11,27 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		 + {youralias}-dev-rg  <br />
 		 + {youralias}-prod-rg <br />
 	* Choose the region that is most appropriate to your current location.
+3. **Resources Deployment:** Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value. This is one of the parameters you need to provide as part of deployment. Make a note of SQL User ID and Password as these are needed in later steps.
+
+	+ **Deploy resources in Dev Resource Group** - Click Deploy to Azure button to deploy resources in Dev Resource group created above. 
+
+		[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FMainARMTemplate.json)
+
+	 + **Deploy resources in Prod Resource Group** - Click Deploy to Azure button to deploy resources in Prod Resource group created above. 
+
+		[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FProd%2FMainARMTemplate.json)
+
+5. **Update Secrets in Azure Key Vaults** - As part of deployment, two secrets are cretaed in Dev and Prod Key Vaults - **ADLSAccountKey and AzureSQLCS**.One to store ADLS Account Key and one to store Azure SQL DB connection string. You need to provide your credentials for these secrets in both environments.
 	
-3. **Deploy resources in Dev Resource Group** - Click Deploy to Azure button to deploy resources in Dev Resource group created above. Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value. This is one of the parameters you need to provide as part of deployment.
-
-	[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FMainARMTemplate.json)
-
-4. **Deploy resources in Prod Resource Group** - Click Deploy to Azure button to deploy resources in Prod Resource group created above. Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value. This is one of the parameters you need to provide as part of deployment.
-
-	[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FProd%2FMainARMTemplate.json)
-
-5. **Update Secrets in Azure Key Vaults** - Here, we will create two secrets, one to store ADLS credential and one to store Azure SQL DB connection string.
+	 **ADLS Secret** - <br /> 
+		a. To get account key for storage account - Go to dev storage account created above, select Access Keys under Security + networking, click on show next to Key and copy the value.
+		b. Go to dev azure key vault created above and select secrets under Objects. 
+		c. Click on ADLSAccountKey and select New Version. Paste the account key copied above in secret value and click on create.
+		d. Secret Value - Paste the key value copied above and click on create. <br />
+	**Note:** Repeat steps  a-d for Prod environment.
 	
-	* **Dev Environment** - <br />
-		 **ADLS Secret**
-		+ To get connection string for storage account - Go to dev storage account created above, select Access Keys under Security + networking, click on show next to Connection string and copy the value.
-		+ Go to dev azure key vault created above and select secrets under Objects. Click on Generate/Import
-		+ Name - adlscredential
-		+ Secret Value - Paste the connection string value copied above and click on create. <br />
-	
-		**Azure SQL DB Secret**
-		+ To get connection string for SQL DB - Go to dev SQL DB created above, select Connection strings under Settings and copy ADO.NET (Active Directory integrated authentication) value. Replace {your_username} with your user ID
+	**Azure SQL DB Secret**
+		a. To get connection string for SQL DB - Go to dev SQL DB created above, select Connection strings under Settings and copy ADO.NET (SQL authentication) value. Replace {your_username} and password with vaules you provided during resource deployment.
 		+ Go to dev azure key vault created above and select secrets under Objects. Click on Generate/Import
 		+ Name - sqlconnectionstring
 		+ Secret Value - Paste the connection string value copied above and click on create.
