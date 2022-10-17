@@ -95,7 +95,8 @@
     "variables": {
         "storagedevtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Dev/AzureDataLakeStorageGen2.json",
 		"AzureSQLDbdevtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Dev/AzureSQLDatabase.json",
-		"Azurekvdevtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Dev/Azurekeyvault.json"
+		"Azurekvdevtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Dev/Azurekeyvault.json",
+		"ADFtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Dev/ADF"
     },
     "resources": [
         {
@@ -184,6 +185,23 @@
                     },
 					"AdlssecretValue": {
 						"value": "[parameters('AdlssecretValue')]"
+                    }
+                }
+            }
+        },
+		{
+            "apiVersion": "2022-05-01",
+            "name": "ADFTemplate",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+                "mode": "incremental",
+                "templateLink": {
+                    "uri": "[variables('ADFtemplatelink')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "yourAlias": {
+                        "value": "[parameters('yourAlias')]"
                     }
                 }
             }
