@@ -12,8 +12,8 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		 + {youralias}-prod-rg <br />
 	* Choose the region that is most appropriate to your current location.
 	
-3. 
-
+3. **Deploy resources in Dev Resource Group** - In this repo, go to Azure-Data-Factory-CI-CD/ARMTemplates/Dev/MainARMTemplate.json
+![Deploy to Azure](https://aka.ms/deploytoazurebutton)
 7. **Create Secrets in Azure Key Vaults** - Here, we will create two secrets, one to store ADLS credential and one to store Azure SQL DB connection string.
 	
 	* **Dev Environment** - <br />
