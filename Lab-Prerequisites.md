@@ -11,7 +11,7 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		 + {youralias}-dev-rg  <br />
 		 + {youralias}-prod-rg <br />
 	* Choose the region that is most appropriate to your current location.
-3. **Resources Deployment:** Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value. This is one of the parameters you need to provide as part of deployment. Make a note of SQL User ID and Password as these are needed in later steps.
+3. **Resources Deployment:** Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value. Use this value for userObjectId parameter.To get ADF Object ID, . Make a note of SQL User ID and Password as these are needed in later steps.
 
 	+ **Deploy resources in Dev Resource Group** - Click Deploy to Azure button to deploy resources in Dev Resource group created above. 
 
