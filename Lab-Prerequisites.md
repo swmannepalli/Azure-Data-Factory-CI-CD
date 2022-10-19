@@ -22,7 +22,7 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		- User ObjectId - Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value.
 		- ADF ObjectId - Go to Dev ADF created above --> Managed Identities --> copy Object Id.
 		- Azure Sqlsecret Value - Go to {youralias}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
-
+		- Adlssecret Value - {youralias}devadls --> Access Keys --> Click on Show for Key1 and copy
 	
 		[![Deploy Dev KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FAzurekeyvault.json)
 
@@ -37,6 +37,7 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		- User ObjectId - Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value.
 		- ADF ObjectId - Go to Prod ADF created above --> Managed Identities --> copy Object Id.
 		- Azure Sqlsecret Value - Go to {youralias}-prod-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
+		-  Adlssecret Value - {youralias}prodadls --> Access Keys --> Click on Show for Key1 and copy
 	
 		[![Deploy Prod KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FProd%2FAzurekeyvault.json)
 	
