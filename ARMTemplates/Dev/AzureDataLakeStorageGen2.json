@@ -90,7 +90,15 @@
                 "isHnsEnabled": true,
                 "supportsHttpsTrafficOnly": true
             }
-        }
+        },
+		{
+		  "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+		  "apiVersion": "2021-06-01",
+		  "name": "[format('{0}/default/{1}', variables('storageAccountName'), parameters('containerName'))]",
+		  "dependsOn": [
+			"[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
+      ]
+		}
     ],
    "outputs": {
 		
