@@ -4,7 +4,7 @@ In this workshop we work on implementing continuous integration and continuous d
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-To understand source control terminology, how branching works and highlevel ADF CI/CD lifecycle, refer [Understand terminology and Release Lifecycle]
+To understand source control terminology, how branching works and highlevel ADF CI/CD lifecycle, refer [Understand terminology and Release Lifecycle](Files/CICD-Documentation.md)
 
 **🧪 Lab Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
