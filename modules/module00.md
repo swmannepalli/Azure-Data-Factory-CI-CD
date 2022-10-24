@@ -5,17 +5,19 @@
 **📢 Introduction**
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-In order to follow along with the ADF DevOps integration lab exercises, you need to provision a set of resources. One for Dev and one for Prod as the lab demonstrates deployment from Dev to Production.  
+In order to follow along with the ADF DevOps integration lab exercises, you need to provision a set of resources. One for Dev and one for Prod as the lab demonstrates deployment from Dev to Production. This module will help you to create following resources: <br />
+ 	
++ Dev Resource Group
++ ADLS Gen2
++ Azure Data Factory
++ Azure SQL Database
++ Azure KeyVault
 
-🤔 Dev Prerequisites
+🤔 Prerequisites
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. **Azure subscription** - Use your own internal subscription to create all resources
-2. The Subscription must have the following resources created.
-	+ Dev Resource Group
-	+ ADLS Gen2
-	+ Azure Data Factory
-	+ Azure SQL Database
-	+ Azure KeyVault
+2. An Azure account with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a free account.
+3. You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
 	
 🧪 **Lab Dev Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
