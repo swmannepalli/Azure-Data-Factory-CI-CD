@@ -1,17 +1,28 @@
-**Azure Data Factory CI/CD Lab prerequisites**
+**📢 Introduction**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-To have a successful experience for the Azure Data Factory CI/CD lab, please ensure that you meet the following pre-requisites:
+In order to follow along with the ADF DevOps integration lab exercises, you need to provision a set of resources. One for Dev and one for Prod as the lab demonstrates deployment from Dev to Production.  
 
-one for Dev and one for Prod as the lab demonstrates deployment from Dev to Production.  
-
+🤔 Dev Prerequisites
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. **Azure subscription** - Use your own internal subscription to create all resources
-2. **Create Resource Groups** - Reference Document [Create Resource Group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) <br />
+2. The Subscription must have the following resources created.
+	+ Dev Resource Group
+	+ ADLS Gen2
+	+ Azure Data Factory
+	+ Azure SQL Database
+	+ Azure KeyVault
+	
+🧪 **Lab Dev Environment Setup**
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	* Create two Resource Groups (one for Dev and one for Prod) with the following naming convention (do not forget to use your alias):<br />
+1.. **Create Resource Group** - Reference Document [Create Resource Group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) <br />
+
+	* Create a Resource Group with the following naming convention (do not forget to use your alias):<br />
 		 + {youralias}-dev-rg  <br />
-		 + {youralias}-prod-rg <br />
 	* Choose the region that is most appropriate to your current location.
-3. **Dev Resources Deployment:**  Make a note of SQL User ID and Password as these are needed in later steps.
+	
+2. **Dev Resources Deployment:**  Make a note of SQL User ID and Password as these are needed in later steps.
 
 	+ **Deploy ADLS, ADF and Azure SQL resources in Dev Resource Group** - Click Deploy to Azure button to deploy resources in Dev Resource group created above. <br /> <br />
 	Right-click or Ctrl + click the button below to open the Azure Portal in a new window. <br />
