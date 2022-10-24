@@ -69,4 +69,4 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 	
 If you do not have the required permissions to fulfil these pre-requisites or need assistance, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
 
- [Continue >](Readme.md)
+ [Continue >](module01.md)
