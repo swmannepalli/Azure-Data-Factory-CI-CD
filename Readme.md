@@ -13,3 +13,6 @@ Azure Data Factory integrates with both Github and Azure DevOps Git for source c
 4. **Pull Request** - In order to merge changes from feature branch to collaboration branch, we need to create pull request. This action helps to do code reviews, raise pull requests and merge changes to collaboration branch.
 5. **Commit** - Commit is used to save the changes to local repository. In ADF world, it is saving to local branch.
 
+**Prerequisites**
++ An Azure account with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a free account.
++ You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
