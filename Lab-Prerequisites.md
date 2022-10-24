@@ -25,7 +25,6 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		- Azure Sqlsecret Value - Go to {youralias}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
 		- Adlssecret Value - {youralias}devadls --> Access Keys --> Click on Show for Key1 and copy
 <br /> <br />
-    Right-click or Ctrl + click the button below to open the Azure Portal in a new window. <br />
 	
 		[![Deploy Dev KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FAzurekeyvault.json)
 
