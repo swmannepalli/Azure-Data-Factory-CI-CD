@@ -21,4 +21,4 @@ Azure Data Factory integrates with both Github and Azure DevOps Git for source c
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 **🧪 Lab Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-+ [Contribution guidelines for this project](docs/CONTRIBUTING.md)
++ [Lab Environment](Azure-Data-Factory-CI-CD/Lab-Prerequisites.md)
