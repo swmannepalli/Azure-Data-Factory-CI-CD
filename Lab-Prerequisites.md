@@ -13,8 +13,9 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 	* Choose the region that is most appropriate to your current location.
 3. **Dev Resources Deployment:**  Make a note of SQL User ID and Password as these are needed in later steps.
 
-	+ **Deploy ADLS, ADF and Azure SQL resources in Dev Resource Group** - Click Deploy to Azure button to deploy resources in Dev Resource group created above. 
-
+	+ **Deploy ADLS, ADF and Azure SQL resources in Dev Resource Group** - Click Deploy to Azure button to deploy resources in Dev Resource group created above. <br /> <br />
+	Right-click or Ctrl + click the button below to open the Azure Portal in a new window. <br />
+	
 		[![Deploy Dev Resources to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FMainARMTemplate.json)
 		
 	+ **Deploy Azure KeyVault** - <br />
@@ -23,6 +24,8 @@ one for Dev and one for Prod as the lab demonstrates deployment from Dev to Prod
 		- ADF ObjectId - Go to Dev ADF created above --> Managed Identities --> copy Object Id.
 		- Azure Sqlsecret Value - Go to {youralias}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
 		- Adlssecret Value - {youralias}devadls --> Access Keys --> Click on Show for Key1 and copy
+<br /> <br />
+    Right-click or Ctrl + click the button below to open the Azure Portal in a new window. <br />
 	
 		[![Deploy Dev KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FAzurekeyvault.json)
 
