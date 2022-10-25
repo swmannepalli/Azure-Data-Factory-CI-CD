@@ -20,6 +20,8 @@
 + After a pull request is approved and changes are merged in the main branch, the changes get published to the development factory. <br />
 
 	![image](https://user-images.githubusercontent.com/84516667/197627738-a8a1fdd5-9270-41b0-b89c-780f1865a4ae.png)
+	<img width="569" alt="image" src="https://user-images.githubusercontent.com/84516667/197803750-bfdbbb56-b2e4-4b5f-b5e0-11606fad307e.png">
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Release Lifecycle**
