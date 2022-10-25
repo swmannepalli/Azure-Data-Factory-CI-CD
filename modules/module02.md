@@ -1,7 +1,7 @@
 **Module 02 - Set up  Code Repository for Dev Data Factory**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[< Previous Module](module01.md) - [Home](Readme.md) - [Next Module >](module03.md)
+[< Previous Module](module01.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module03.md)
 
 🤔 Prerequisites
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
