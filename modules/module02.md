@@ -31,6 +31,8 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 
 **Create Pipelines in Working Branch**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
+**Note**: Make sure the branch is pointing to working branch before you create below artifacts.
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/84516667/197802694-9bc0d1b1-3c54-4207-a0dd-44624f1cf31e.png">
 
 + For this lab, we will see how a copy activity with source as Azure Data Lake Storage Gen2 and Sink as Azure SQL Database is deployed to Production with minimal changes to connection strings/account keys. 
 + **Create Linked Services** for following resources, these are the Dev resources that are deployed as part of Module 00 - Lab Environment Setup. <br />
