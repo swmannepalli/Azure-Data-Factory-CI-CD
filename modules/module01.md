@@ -1,7 +1,7 @@
 **Module 01 - Create a project in Azure DevOps**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[< Previous Module](module00.md) - [Home](Readme.md) - [Next Module >](module02.md)
+[< Previous Module](module00.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module02.md)
 
 🤔 Prerequisites
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
