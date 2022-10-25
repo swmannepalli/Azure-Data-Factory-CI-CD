@@ -42,4 +42,9 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 	&ensp; - **Azure SQL Database**: Select Azure Key Vault, and select AKV linked service created above. Select AzureSQLCS as Secret name. Click Create. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/AzureSQL_LinkedService_Properties.jpg)
 	
 	
-+ **Create Datasets**
++ **Create Datasets** for the linked services created above. <br /> Note: We will not be copying any files as part of this lab as this is intended to show how pipeline deployments happen by leveraging KeyVault Secret Names. So, for ADLS Gen2 Dataset, randomly select a file format and root folder (By clicking browse button next to File path).
+	
+	&ensp; - **Azure Data Lake Storage Gen2**: Select the linked service created above, select any file format and click continue. Select browse button to select root folder and click on OK. 
+	
+	
++ **Create Copy Activity** - Go to Source and select Wildcard file path next to File path type and type * in first empty box
