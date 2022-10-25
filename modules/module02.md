@@ -1,4 +1,4 @@
-**Module 02 - Set up  Code Repository for Dev Data Factory**
+**Module 02 - Data Factory Development Workflow**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [< Previous Module](module01.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module03.md)
@@ -32,5 +32,16 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 **Create Pipelines in Working Branch**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-+ 
++ For this lab, we will see how a copy activity with source as Azure Data Lake Storage Gen2 and Sink as Azure SQL Database is deployed to Production with minimal changes to connection strings/account keys. 
++ Create Linked Services for following resources, these are the Dev resources that are deployed as part of Module 00 - Lab Environment Setup. <br />
+
+	&nbsp; - **Azure KeyVault**: Select subscription where the dev resources are deployed. Select Dev Key Vault Name and leave Authentical Method to System Assigned Managed Identity. <br />
+
+<img width="482" alt="image" src="https://user-images.githubusercontent.com/84516667/197681142-33966dd2-6bed-43d2-8293-f6947d3f5905.png">
+
+&nbsp; - **Azure Data Lake Storage Gen2**: 
+
+
+			
+    
 
