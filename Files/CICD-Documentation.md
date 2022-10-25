@@ -19,8 +19,9 @@
 ![image](https://user-images.githubusercontent.com/84516667/197627738-a8a1fdd5-9270-41b0-b89c-780f1865a4ae.png)
 
 
+** Release Lifecycle**
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+When the team is ready to deploy the changes to a prod factory, the team goes to their Azure Pipelines release and deploys the development factory to next environment (UAT/Prod). This deployment takes place as part of an Azure Pipelines task and uses Resource Manager template parameters to apply the appropriate configuration.
 
 
-When the team is ready to deploy the changes to a prod factory, the team goes to their Azure Pipelines release and deploys the desired version of the development factory to UAT. This deployment takes place as part of an Azure Pipelines task and uses Resource Manager template parameters to apply the appropriate configuration.
-
-After the changes have been verified in the test factory, deploy to the production factory by using the next task of the pipelines release.
