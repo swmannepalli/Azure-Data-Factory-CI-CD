@@ -6,7 +6,7 @@
 🤔 Prerequisites
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-You need to complete [Lab Environment Setup](module00.md)  [Create a project in Azure DevOps](module01.md)  [Data Factory Development Workflow](module02.md)  [Release Lifecycle](module03.md)
+You need to complete [Lab Environment Setup](module00.md)&ensp;  [Create a project in Azure DevOps](module01.md) &ensp;  [Data Factory Development Workflow](module02.md)  &ensp; [Release Lifecycle](module03.md)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
