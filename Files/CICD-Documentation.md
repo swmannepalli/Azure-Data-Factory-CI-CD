@@ -12,14 +12,15 @@
 **Development Workflow**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-+ Azure Repos Git is configured only in development data factory. All developers should have permission to author Data Factory resources like pipelines and datasets.
++ Azure Repos Git is configured only in development data factory. The test and production factories shouldn't have a git repository associated with them and should only be updated via an Azure DevOps pipeline or via a Resource Management template. 
++ All developers should have permission to author Data Factory resources like pipelines and datasets.
 + Developer creates a feature branch to update/create pipelines. After a developer is satisfied with their changes, they create a pull request from their feature branch to the main or collaboration branch to get their changes reviewed by peers.
-+ After a pull request is approved and changes are merged in the main branch, the changes get published to the development factory.
++ After a pull request is approved and changes are merged in the main branch, the changes get published to the development factory. <br />
 
-![image](https://user-images.githubusercontent.com/84516667/197627738-a8a1fdd5-9270-41b0-b89c-780f1865a4ae.png)
+	![image](https://user-images.githubusercontent.com/84516667/197627738-a8a1fdd5-9270-41b0-b89c-780f1865a4ae.png)
 
-
-** Release Lifecycle**
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Release Lifecycle**
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 When the team is ready to deploy the changes to a prod factory, the team goes to their Azure Pipelines release and deploys the development factory to next environment (UAT/Prod). This deployment takes place as part of an Azure Pipelines task and uses Resource Manager template parameters to apply the appropriate configuration.
