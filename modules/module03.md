@@ -53,11 +53,4 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/84516667/197867697-bcdfbfd0-58b3-45bf-a180-8a77c37f364d.png">
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Test Continuous Deployment**
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
 [Continue >](module04.md)
