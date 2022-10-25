@@ -1,6 +1,6 @@
 **Module 00 - Lab Environment Setup**
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
- [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) -  [Next Module (Create project in Azure DevOps) >](Lab-Prerequisites.md)
+ [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) -  [Next Module (Create project in Azure DevOps) >](module01.md)
 
 **📢 Introduction**
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
