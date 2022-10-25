@@ -50,4 +50,17 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 	&ensp; - **Azure SQL Database**: Select edit for Table name and enter dbo for schema name and any table name.
 	
 + **Create Copy Activity** - For Source, select ADLS Gen2 Dataset and select Wildcard file path next to File path type and type * in first empty box. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/CopyActivity_Source_Properties.jpg) <br /> &ensp; - For Sink, select Azure SQL Database Dataset. Click on Save all to save all changes.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+**Publishing Changes**
+---------------------------------------------------------------------------------------------------------------------------------------------------------	
+To complete the development lifecycle, <br />
+
++ Developers should perform unit test cases in their feature branch to make sure there are no errors and the code is matching to their requirements. In this case, click on Validate all to check there are no errors in the pipeline created above.  <br />
++ To merge changes back to Collaboration branch, expand the feature1 branch on the left top, and click on Create Pull Request. This will take you to the Azure DevOps page.  <br />
++ Provide Title and add reviewers if required. This is recommended approach so there are some other users who can validate your branch work to prevent any errors in main/collaboration branch. For this lab, you can skip it and click on Create and Complete. A pop up window appears, and it is best approach to delete feature1 branch after merging to avoid multiple feature branches hanging in the repo. Click on Complete Merge.  <br />
+	
+Now, Azure DevOps repo will contain the Data Factory Artifacts. <br />
+	
+<img width="1211" alt="image" src="https://user-images.githubusercontent.com/84516667/197806842-9274947a-fe6d-402c-bad1-e5d1b94528b1.png">
+
 	
