@@ -7,11 +7,11 @@
 
 In order to follow along with the ADF DevOps integration lab exercises, you need to provision a set of resources. One for Dev and one for Prod as the lab demonstrates deployment from Dev to Production. This module will help you to create following resources: <br />
  	
-+ Dev Resource Group
-+ ADLS Gen2
-+ Azure Data Factory
-+ Azure SQL Database
-+ Azure KeyVault
++ Dev and Prod Resource Groups
++ Dev and Prod ADLS Gen2
++ Dev and Prod Azure Data Factory
++ Dev and Prod Azure SQL Database
++ Dev and Prod Azure KeyVault
 
 🤔 Prerequisites
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
