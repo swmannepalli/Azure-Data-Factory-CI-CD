@@ -10,7 +10,7 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Setting up Code Repository**
+**Setting up Code Repository in Dev Data Factory**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 We can setup the code repository while creating the data factory by checking the enable Git box or after creation of Data Factory.
