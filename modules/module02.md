@@ -23,7 +23,7 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 
 + Select Repository type as Azure DevOps Git and select your Azure Active Directory. Click on Continue.
 + Under Select repository, select your DevOps organization name from the drop down. Select Project and Repository name from the drop down.
-+ We will create a new Collaboration branch by name "main"
++ Create a new Collaboration branch by name "main"
 + Publish branch defaults to adf_publish.
 + Leave remaining settings to default and click on Apply
 + As per recommended guidlines, all developers should work in their own Working branch and not in main branch. So, in the next pop-up, click on Create new to create a Working branch. You can provide any name, for this lab let's use feature1 as the name.
