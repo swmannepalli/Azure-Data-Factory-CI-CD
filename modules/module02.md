@@ -14,7 +14,7 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 We can setup the code repository while creating the data factory by checking the enable Git box or after creation of Data Factory.
-In this lab, we're setting up the repository after creation of Data Factory. Launch Data Factory Studio, go to Author. Select “Set up code repository” from the Data Factory drop-down list as shown below,
+In this lab, we're setting up the repository after creation of Data Factory. Launch Dev Data Factory Studio, go to Author. Select “Set up code repository” from the Data Factory drop-down list as shown below,
 
 ![image](https://user-images.githubusercontent.com/84516667/197676259-5c381c3d-fbe5-4040-ace2-d7fabb21dfa2.png)
 
