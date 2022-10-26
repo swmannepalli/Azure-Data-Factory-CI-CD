@@ -34,7 +34,7 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 **Note**: Make sure the branch is pointing to working branch before you create below artifacts.
 <img width="488" alt="image" src="https://user-images.githubusercontent.com/84516667/197802694-9bc0d1b1-3c54-4207-a0dd-44624f1cf31e.png">
 
-+ For this lab, we will see how a copy activity with source as Azure Data Lake Storage Gen2 and Sink as Azure SQL Database is deployed to Production with minimal changes to connection strings/account keys. 
++ In this lab, a copy activity with source as Azure Data Lake Storage Gen2 and Sink as Azure SQL Database is deployed from Dev Data Factory to Production with minimal changes to connection strings/account keys. 
 + **Create Linked Services** for following resources, these are the Dev resources that are deployed as part of Module 00 - Lab Environment Setup. <br />
 
 	&ensp; - **Azure KeyVault**: Select subscription where the dev resources are deployed. Select Dev Key Vault Name and leave Authentical Method to System Assigned Managed Identity. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/AzureKeyVault_LinkedService_Properties.jpg) 
