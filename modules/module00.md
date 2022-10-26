@@ -48,7 +48,7 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 1. **Create Resource Group** - Reference Document [Create Resource Group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) <br />
 
 	* Create a Resource Group with the following naming convention (do not forget to use your alias):<br />
-		 + {youralias}-dev-rg  <br />
+		 + {youralias}-prod-rg  <br />
 	* Choose the region that is most appropriate to your current location. <br />
 2. **Resources Deployment:**  Make a note of SQL User ID and Password as these are needed in later steps.
 
