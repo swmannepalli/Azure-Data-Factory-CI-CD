@@ -39,7 +39,7 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 
 	&ensp; - **Azure KeyVault**: Select subscription where the dev resources are deployed. Select Dev Key Vault Name and leave Authentical Method to System Assigned Managed Identity. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/AzureKeyVault_LinkedService_Properties.jpg) 
 
-	&ensp; - **Azure Data Lake Storage Gen2**: Select Authentication type as "Account Key", Account selection method as "Enter manually". Enter URL of the accountname (https://<youralias>devadls.dfs.core.windows.net) and select Azure Key Vault created above. Select the secret name ADLSAccountKey. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/ADLS_LinkedService_Properties.jpg)
+	&ensp; - **Azure Data Lake Storage Gen2**: Select Authentication type as "Account Key", Account selection method as "Enter manually". Enter URL of the accountname by replacing youralias with actual alias value (https://youraliasdevadls.dfs.core.windows.net) and select Azure Key Vault created above. Select the secret name ADLSAccountKey. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/ADLS_LinkedService_Properties.jpg)
 
 	&ensp; - **Azure SQL Database**: Select Azure Key Vault, and select AKV linked service created above. Select AzureSQLCS as Secret name. Click Create. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/AzureSQL_LinkedService_Properties.jpg)
 	
