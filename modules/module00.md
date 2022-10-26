@@ -15,9 +15,8 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 
 🤔 Prerequisites
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-1. **Azure subscription** - Use your own internal subscription to create all resources
-2. An Azure account with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a free account.
-3. You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
+1. An Azure account with an active subscription. Note: If you don't have access to an Azure subscription, you may be able to start with a free account.
+2. You must have the necessary privileges within your Azure subscription to create resources, perform role assignments, register resource providers (if required), etc.
 	
 🧪 **Lab Dev Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
