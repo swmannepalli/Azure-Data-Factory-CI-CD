@@ -10,4 +10,4 @@ To understand source control terminology, how branching works and highlevel ADF 
 
 **🧪 Lab Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-+ [Lab Environment](modules/module00.md)
+[Lab Environment](modules/module00.md)
