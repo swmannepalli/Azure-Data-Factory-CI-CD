@@ -47,7 +47,7 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 + **Create Datasets** for the linked services created above. <br /> Note: We will not be copying any files as part of this lab as this is intended to show how pipeline deployments happen by leveraging KeyVault Secret Names. So, for ADLS Gen2 Dataset, randomly select a file format and root folder (By clicking browse button next to File path). 
 	
 	&ensp; - **Azure Data Lake Storage Gen2**: Select the linked service created above, select any file format and click continue. Select browse button to select root folder and click on OK. For File name in File path, provide * and Click on save all. <br />
-	&ensp; - **Azure SQL Database**: Select linked service and click on OK. In the next window, under connection, click on Edit for Table and provide dbo for schema and any table name. <br />
+	&ensp; - **Azure SQL Database**: Select linked service and click on OK. In the next window, under connection, click on Edit for Table and provide dbo for schema and any table name. Click on Save all <br />
 
 <img width="575" alt="image" src="https://user-images.githubusercontent.com/84516667/198135416-ea64fdf2-c5f7-4ebc-808d-7666ad42d033.png">
 
