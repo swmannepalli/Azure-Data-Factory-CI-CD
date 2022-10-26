@@ -13,7 +13,7 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md), [Module 0
 **Creating Release Pipeline**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Now that we've completed development lifecycle where publish branch has all the artifacts, we need to create release pipeline to deploy chnages to Prod environment.
+Now that we've completed development lifecycle where publish branch has all the artifacts, we need to create release pipeline to deploy changes to Prod environment.
 
 **Release Pipeline Steps:**
 
