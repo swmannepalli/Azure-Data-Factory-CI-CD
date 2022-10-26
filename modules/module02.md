@@ -52,7 +52,7 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 <img width="575" alt="image" src="https://user-images.githubusercontent.com/84516667/198135416-ea64fdf2-c5f7-4ebc-808d-7666ad42d033.png">
 
 	
-+ **Create Copy Activity** - For Source, select ADLS Gen2 Dataset and select Wildcard file path next to File path type and type * in first empty box. Refer [Screenshot](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/ce89dfd5e47197410d78d4ab2d1380b42781e857/Files/Screenshots/CopyActivity_Source_Properties.jpg) <br /> &ensp; - For Sink, select Azure SQL Database Dataset. Click on Save all to save all changes.
++ **Create Copy Activity** - For Source, select ADLS Gen2 Dataset. For Sink, select Azure SQL Database Dataset. Click on Save all to save all changes.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 **Publishing Changes**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------	
