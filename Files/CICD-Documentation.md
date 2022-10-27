@@ -30,4 +30,7 @@
 
 When the team is ready to deploy the changes to a prod factory, the team goes to their Azure Pipelines release and deploys the development factory to next environment (UAT/Prod). This deployment takes place as part of an Azure Pipelines task and uses Resource Manager template parameters to apply the appropriate configuration.
 
+<img width="2174" alt="image" src="https://user-images.githubusercontent.com/84516667/198168882-4c2946f0-ec88-45e6-b169-f098865971db.png">
+
+
 [> Back](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD)
