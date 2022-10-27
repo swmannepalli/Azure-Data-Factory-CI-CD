@@ -26,7 +26,7 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 + Create a new Collaboration branch by name "main"
 + Publish branch defaults to adf_publish.
 + Leave remaining settings to default and click on Apply
-+ As per recommended guidlines, all developers should work in their own Working branch and not in main branch. So, in the next pop-up, click on Create new to create a Working branch. You can provide any name, for this lab let's use feature1 as the name.
++ As per recommended guidlines, all developers should work in their own Working branch and not in main branch. So, in the next pop-up, click on Create new to create a Working branch. The usual naming convention is feature_XY where XY can be the work item number from Azure DevOps board on which you are working. For this lab let's use feature1 as the name.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Create Pipelines in Working Branch**
