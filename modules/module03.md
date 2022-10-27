@@ -21,6 +21,15 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 
 + To acheive automatic publishing of chnages to dev environment, we need to create a build pipeline using YAML that will package the artifacts for continuous integration whenever the code changes in master branch.
 
+Login to https://dev.azure.com to open Azure DevOps. Navigate to the project where you have hosted the source code repository of Azure Data Factory V2 objects. To create a new pipeline under a project, Select Pipelines -> Create Pipeline. 
+
+<img width="1467" alt="image" src="https://user-images.githubusercontent.com/84516667/198354721-ad29aedd-9f7e-4a9c-a608-8a1a1da9e52d.png">
+
+Select Azure Repos Git as our code resides in Azure Repos and select the repo where the ADF v2 objects are hosted. Select Starter pipeline.
+
+<img width="490" alt="image" src="https://user-images.githubusercontent.com/84516667/198354977-1c9eef72-dcbf-4435-bbd2-ec40ac7606c1.png"> <img width="500" alt="image" src="https://user-images.githubusercontent.com/84516667/198355031-d9443573-53d4-4f1e-be16-48eb3f9f5724.png">
+
+
 To complete the development lifecycle, <br />
 
 + Developers should perform unit test cases in their feature branch to make sure there are no errors and the code is matching to their requirements. In this case, click on Validate all to check there are no errors in the pipeline created above.  <br />
