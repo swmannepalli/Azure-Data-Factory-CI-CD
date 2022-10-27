@@ -7,11 +7,11 @@
 
 In order to follow along with the ADF DevOps integration lab exercises, you need to provision a set of resources. One for Dev and one for Prod as the lab demonstrates deployment from Dev to Production. This module will help you to create following resources: <br />
  	
-+ Dev and Prod Resource Groups
-+ Dev and Prod ADLS Gen2
-+ Dev and Prod Azure Data Factory
-+ Dev and Prod Azure SQL Database
-+ Dev and Prod Azure KeyVault
++ Dev and Prod Resource Groups - This is the container that will hold all related resources in our Azure solution.
++ Dev and Prod ADLS Gen2 - This is the source in Data Factory copy activity
++ Dev and Prod Azure Data Factory - This is where sample data factory pipeline will be hosted. we will set up Git Integration for DEV ADF to host all objects in Azure Repos to implement version control.
++ Dev and Prod Azure SQL Database - This is the destination/sink in Data Factory copy activity
++ Dev and Prod Azure KeyVault - This is where we will be storing Azure Storage Account access key and SQL Database connection string as secrets. 
 
 🤔 Prerequisites
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
