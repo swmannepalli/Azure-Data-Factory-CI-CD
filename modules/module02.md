@@ -62,8 +62,11 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 	
 + **Create Copy Activity** - For Source, select ADLS Gen2 Dataset. For Sink, select Azure SQL Database Dataset. Click on Save all to save all changes.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-**Publishing Changes**
----------------------------------------------------------------------------------------------------------------------------------------------------------	
+**Publishing Changes (Automated)**
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ To acheive automatic publishing of chnages to dev environment, we need to create a build pipeline using YAML that will package the artifacts for continuous integration whenever the code changes in master branch.
+
 To complete the development lifecycle, <br />
 
 + Developers should perform unit test cases in their feature branch to make sure there are no errors and the code is matching to their requirements. In this case, click on Validate all to check there are no errors in the pipeline created above.  <br />
