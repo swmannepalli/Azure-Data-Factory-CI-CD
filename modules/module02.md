@@ -1,4 +1,4 @@
-**Module 02 - Data Factory Development Workflow**
+**Module 02 - Data Factory Repository and Pipeline Setup**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [< Previous Module](module01.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module03.md)
