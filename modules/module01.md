@@ -14,7 +14,7 @@ The following resources are required in this tutorial:
 **Create Azure DevOps project**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Azure DevOps is the tool to continuously build, test, and deploy your code to any platform and cloud. Create a new project in Azure DevOps by following [this](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser&viewFallbackFrom=vsts) tutorial.
+Azure DevOps is the tool to continuously build, test, and deploy your code to any platform and cloud. Login to https://dev.azure.com to open Azure DevOps. Create a new project in Azure DevOps by following [this](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser&viewFallbackFrom=vsts) tutorial.
 
 Refer screenshot below for project creation settings. Project name can be anything that is unique to your organization. At this point, your repo is empty.
 
