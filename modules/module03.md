@@ -45,11 +45,14 @@ Once the pipeline is created, the pipeline name is automatically configured as A
 
 + This will automatically trigger the pipeline as there is a commit made to the master branch via pull request. On reviewing the Pipelines, you should see that the AzureDataFactory-CI pipeline is triggered as a result of merging the Pull request and completed successfully.
 
-Now, Azure DevOps repo will contain the Data Factory Artifacts. <br /> 
-	
-<img width="1211" alt="image" src="https://user-images.githubusercontent.com/84516667/197806842-9274947a-fe6d-402c-bad1-e5d1b94528b1.png">
+<img width="1007" alt="image" src="https://user-images.githubusercontent.com/84516667/198360149-e1eeb304-b858-48f1-b459-ca6af34a6b3e.png">
 
-+ You'll see only main branch in the repo and no publish branch yet. At this point, code is merged to main branch but not yet published. Now that all the code is in main branch, perform integration test cases to make sure end to end code is working without any errors. 
-+ Go back to the Data Factory Studio, go back to main branch and click on Publish. At this point, changes are deployed to Data Factory, publishes to collaboration branch and generates ARM Template (this is what we use to deploy code to other environments). Now, if you go to Azure DevOps and check branches, adf_publish branch is created.
+On reviewing the run, you should see something like below which shows that an artefact is published and clicking that, we should be able to view the files present in that.
+
+<img width="1009" alt="image" src="https://user-images.githubusercontent.com/84516667/198360586-7d405c96-5822-4602-bc5f-7b4d739e2dc9.png">
+
+<img width="861" alt="image" src="https://user-images.githubusercontent.com/84516667/198360058-f8873426-6c25-485a-bcb3-1870d6f2bf41.png">
+
+The completes setting up our build pipeline section. In the next section, we will be creating a release pipeline to deploy this on to Production.
 
 [Continue >](module04.md)
