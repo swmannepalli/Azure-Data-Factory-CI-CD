@@ -9,6 +9,7 @@
 4. **Pull Request** - In order to merge changes from feature branch to collaboration branch, we need to create pull request. This action helps to do code reviews, raise pull requests and merge changes to collaboration branch.
 5. **Commit** - Commit is used to save the changes to local repository. In ADF world, it is saving to local branch.
 6. **Azure Resource Manager templates** - Azure Data Factory utilizes Azure Resource Manager templates to store the configuration of your various ADF entities (pipelines, datasets, data flows, and so on)
+7. **CI/CD** - Collection of practices of Continous Integration and Continous Delivery in modern software engineering. It bridges the gap between development and operations teams by injecting automation at different stages in the development life cycle which includes building, testing and deployment of applications.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Development Workflow**
