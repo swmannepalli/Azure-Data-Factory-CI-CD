@@ -10,6 +10,12 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**Development Workflow**
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="2376" alt="image" src="https://user-images.githubusercontent.com/84516667/198290530-226184ca-5e08-457b-ab6e-9e85b1d6eb01.png">
+
+
 **Setting up Code Repository in Dev Data Factory**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -17,6 +23,7 @@ We can setup the code repository while creating the data factory by checking the
 In this lab, we're setting up the repository after creation of Data Factory. Launch Dev Data Factory Studio, go to Author. Select “Set up code repository” from the Data Factory drop-down list as shown below,
 
 ![image](https://user-images.githubusercontent.com/84516667/197676259-5c381c3d-fbe5-4040-ace2-d7fabb21dfa2.png)
+
 
 **Configure a repository**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
