@@ -21,7 +21,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 **Step 1 - Create a release pipeline:**
 
-+ Go to Azure DevOps project --> Pipelines --> Releases. Click on New pipeline
++ Login to https://dev.azure.com to open Azure DevOps and navigate to the project where you have hosted the source code repository of Azure Data Factory V2 --> Pipelines --> Releases. Click on New pipeline
 + Let's start with Empty job --> Under Select a template, click on Empty job. 
 
 **Step 2 - Define a stage name:**
