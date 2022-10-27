@@ -1,7 +1,7 @@
 **Module 02 - Data Factory Development Workflow**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[< Previous Module](module01.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module03.md)
+[< Previous Module](module02.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module04.md)
 
 🤔 Prerequisites
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -80,4 +80,4 @@ Now, Azure DevOps repo will contain the Data Factory Artifacts. <br />
 + You'll see only main branch in the repo and no publish branch yet. At this point, code is merged to main branch but not yet published. Now that all the code is in main branch, perform integration test cases to make sure end to end code is working without any errors. 
 + Go back to the Data Factory Studio, go back to main branch and click on Publish. At this point, changes are deployed to Data Factory, publishes to collaboration branch and generates ARM Template (this is what we use to deploy code to other environments). Now, if you go to Azure DevOps and check branches, adf_publish branch is created.
 
-[Continue >](module03.md)
+[Continue >](module04.md)
