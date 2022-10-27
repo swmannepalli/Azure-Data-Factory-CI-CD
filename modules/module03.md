@@ -31,13 +31,20 @@ Select Azure Repos Git as our code resides in Azure Repos and select the repo wh
 
 Copy the [this](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/d41c0db778ca6f49e7354f26039f625d09004b59/Files/azure-pipelines.yml) (Right click to open in new window) code and paste in the azure-pipelines.yml file and click Save. This will prompt you to commit the file to the repository. Select “commit directly to the master branch” option to commit this file. The commit message is already populated with a predefined message. Alternatively, you can write a custom commit message.
 
+Once the pipeline is created, the pipeline name is automatically configured as ADF-CICD-Demo. You can rename it to “AzureDataFactory-CI” to give a more meaningful name. 
 
-To complete the development lifecycle, <br />
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Testing development lifecycle** <br />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Developers should perform unit test cases in their feature branch to make sure there are no errors and the code is matching to their requirements. In this case, click on Validate all to check there are no errors in the pipeline created above.  <br />
 + To merge changes back to Collaboration branch, expand the feature1 branch on the left top, and click on Create Pull Request. This will take you to the Azure DevOps page.  <br />
 + Provide Title and add reviewers if required. This is recommended approach so there are some other users who can validate your branch work to prevent any errors in main/collaboration branch. For this lab, you can skip it and click on Create and Complete. A pop up window appears, and it is best approach to delete feature1 branch after merging which helps in keeping the commit history and repo clean. Click on Complete Merge.  <br />
-	
+
++ This will automatically trigger the pipeline as there is a commit made to the master branch via pull request. On reviewing the Pipelines, you should see that the AzureDataFactory-CI pipeline is triggered as a result of merging the Pull request and completed successfully.
+
 Now, Azure DevOps repo will contain the Data Factory Artifacts. <br /> 
 	
 <img width="1211" alt="image" src="https://user-images.githubusercontent.com/84516667/197806842-9274947a-fe6d-402c-bad1-e5d1b94528b1.png">
