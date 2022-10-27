@@ -1,4 +1,4 @@
-**Module 02 - Data Factory Development Workflow**
+**Module 03 - Data Factory Development Workflow**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [< Previous Module](module02.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module04.md)
