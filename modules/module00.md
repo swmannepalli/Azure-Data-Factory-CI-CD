@@ -66,8 +66,14 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 		- Azure Sqlsecret Value - Go to {youralias}-prod-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
 		-  Adlssecret Value - {youralias}prodadls --> Access Keys --> Click on Show for Key1 and copy
 	
-		
-	
+After going through the above steps, you should see something similar to the following in the resource group {youralias}-dev-rg and {youralias}-prod-rg. <br />
+
+
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/84516667/198171592-001f27a5-2c77-4ebb-ae9c-2fd7175f9ef7.png"> <br />
+
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/84516667/198171663-0ecd3d9e-b080-4fb7-803e-221c8702d6f6.png">
+
+
 If you do not have the required permissions to fulfil these pre-requisites or need assistance, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
 
  [Continue >](module01.md)
