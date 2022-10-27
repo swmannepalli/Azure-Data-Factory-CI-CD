@@ -31,7 +31,9 @@ Select Azure Repos Git as our code resides in Azure Repos and select the repo wh
 
 Copy the [this](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/d41c0db778ca6f49e7354f26039f625d09004b59/Files/azure-pipelines.yml) (Right click to open in new window) code and paste in the azure-pipelines.yml file and click Save. This will prompt you to commit the file to the repository. Select “commit directly to the master branch” option to commit this file. The commit message is already populated with a predefined message. Alternatively, you can write a custom commit message.
 
-Once the pipeline is created, the pipeline name is automatically configured as ADF-CICD-Demo. You can rename it to “AzureDataFactory-CI” to give a more meaningful name. 
+Once the pipeline is created, the pipeline name is automatically configured with the project name. You can rename it to “AzureDataFactory-CI” to give a more meaningful name. 
+
+<img width="931" alt="image" src="https://user-images.githubusercontent.com/84516667/198374612-86ea6920-a2a6-4adb-8d92-7ba7c3ad6fdf.png">
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -45,7 +47,7 @@ Once the pipeline is created, the pipeline name is automatically configured as A
 
 + This will automatically trigger the pipeline as there is a commit made to the master branch via pull request. On reviewing the Pipelines, you should see that the AzureDataFactory-CI pipeline is triggered as a result of merging the Pull request and completed successfully.
 
-<img width="1007" alt="image" src="https://user-images.githubusercontent.com/84516667/198360149-e1eeb304-b858-48f1-b459-ca6af34a6b3e.png">
+<img width="788" alt="image" src="https://user-images.githubusercontent.com/84516667/198375182-30ad8a5d-e875-44ea-8fa6-4cd2a9f938a5.png">
 
 On reviewing the run, you should see something like below which shows that an artefact is published and clicking that, we should be able to view the files present in that.
 
