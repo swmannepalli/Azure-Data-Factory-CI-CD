@@ -58,4 +58,16 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/84516667/197867697-bcdfbfd0-58b3-45bf-a180-8a77c37f364d.png">
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Create Prod Stage**
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ Under Dev stage, click on clone to add Prod stage. Click on the new stage and change name from Copy of Dev to Prod and click on Save.
+
+<img width="303" alt="image" src="https://user-images.githubusercontent.com/84516667/198452226-e21d69da-1224-47d7-98f4-5409990e8102.png">    
+<img width="509" alt="image" src="https://user-images.githubusercontent.com/84516667/198452403-295bb356-6ee5-4a2b-9467-a8b0fc6f5e94.png">
+
+
+
 [Continue >](module05.md)
