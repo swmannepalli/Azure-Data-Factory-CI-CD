@@ -60,7 +60,7 @@
                     ],
                     "output": {
                         "type": "string",
-                        "value": "[concat(parameters('yourAlias'), uniqueString(resourceGroup().id), parameters('resourceSuffix'))]"
+                        "value": "[concat(uniqueString(resourceGroup().id), parameters('resourceSuffix'))]"
                     }
                 }
             }
