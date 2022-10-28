@@ -25,7 +25,12 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 
 **Steps**
 
-+ Add a [package.json](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/package.json) (Right click to open in new window) in a build folder in the same repository of your Data Factory resources. This file has Node and the npm packages that will be installed in later steps.
++ Add package.json file in a build folder in the same repository of your Data Factory resources. This file has Node and the npm packages that will be installed in later steps.
+
+<img width="473" alt="image" src="https://user-images.githubusercontent.com/84516667/198694704-6aed558c-9340-4471-a836-f493ad842c25.png">
+
+Name it as package.json and copy [package.json](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/package.json) (Right click to open in new window) code and paste in the file.
+
 + Create a build pipeline using YAML that will package the artifacts for continuous integration whenever the code changes in master branch.
 
 + Login to https://dev.azure.com to open Azure DevOps. Navigate to the project where you have hosted the source code repository of Azure Data Factory V2 objects. To create a new pipeline under a project, Select Pipelines -> Create Pipeline. 
