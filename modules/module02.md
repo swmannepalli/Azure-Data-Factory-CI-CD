@@ -1,7 +1,7 @@
 **Module 03 - Data Factory Development Workflow**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[< Previous Module](module02.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module04.md)
+[< Previous Module](module01.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module03.md)
 
 🤔 Prerequisites
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -59,4 +59,4 @@ On reviewing the run, you should see something like below which shows that an ar
 
 The completes setting up our build pipeline section. In the next section, we will be creating a release pipeline to deploy this on to Production.
 
-[Continue >](module04.md)
+[Continue >](module03.md)
