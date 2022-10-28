@@ -17,14 +17,14 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 **Release Pipeline Steps:**
 
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/84516667/198480634-7b0ed26c-c1e8-4884-9043-92f8891ca840.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/84516667/198481047-859f2d3d-94d4-4ae3-b248-fbde0bc6014e.png">
 
 **Step 1 - Create a release pipeline:**
 
 + Login to https://dev.azure.com to open Azure DevOps and navigate to the project where you have hosted the source code repository of Azure Data Factory V2 --> Pipelines --> Releases. Click on New pipeline
 + Let's start with Empty job --> Under Select a template, click on Empty job. 
 
-**Step 2 - Define a stage name:**
+**Step 2 - Add Stage - Dev:**
 
 + Provide Stage name (this is environment name), in this lab it is going to be Dev as we want to first deploy the changes to Data Factory mode in Dev ADF v2. (Remember, the changes are still in the Git mode in master branch). Click on Save and Ok.
 
@@ -36,7 +36,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 <img width="401" alt="image" src="https://user-images.githubusercontent.com/84516667/198447195-ad8241f6-b239-4f0c-98da-360ed93b5d23.png"> <img width="306" alt="image" src="https://user-images.githubusercontent.com/84516667/198447399-33a6de05-284e-4d38-bfd6-f7b0ad0323ac.png">
 
-**Step 4 - Create ARM Template Deployment Task for Dev:**
+**Step 4 - Create Dev ARM Template Deployment Task:**
 
 + Now, we need to add a task to provide dev environment details. Click on the 1 job, 0 task under Prod Stage, click on '+' next to Agent job and search for Arm Template deployment and click on add. Select the job to fill out the configurations. 
 + For Azure Resource Manager Connection, select your subscription where Dev Data Factory is deployed and click on Authorize.
@@ -49,7 +49,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 <img width="801" alt="image" src="https://user-images.githubusercontent.com/84516667/198449616-ab59dd02-fb90-4916-b005-baa9f372a5a5.png">
 
-**Step 5 - Define Trigger for Continuous Deployment :**
+**Step 5 - Define Continuous Deployment Trigger:**
 
 + On the Pipeline tab, click on  &ensp; <img width="25" alt="image" src="https://user-images.githubusercontent.com/84516667/197866710-9b0b9d6c-db3d-4ef9-914d-c20367e09eb5.png">  &ensp; icon in Artifacts section, toggle Continuous deployment trigger to enable it.
 + Under Branch filters, click on Add to include a branch from where a release will be triggered only if the Git push contains a commit on the specified branch. For example, selecting "main" will trigger a release for a Git push which contains one or more commits to the main branch. To trigger a release for any commit to branches under features/, enter "features/*". To trigger a release for commits to all branches, enter "*". Note that all specified filters will be OR'ed. For example, an artifact matching at least one filter condition would be sufficient to trigger a release.
@@ -58,19 +58,25 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/84516667/197867697-bcdfbfd0-58b3-45bf-a180-8a77c37f364d.png">
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-**Create Prod Stage and define parameters for ARM Template Deployment Task**
----------------------------------------------------------------------------------------------------------------------------------------------------------
+**Step 6: Clone Stage: Prod:**
 
 + Under Dev stage, click on clone to add Prod stage. Click on the new stage and change name from Copy of Dev to Prod and click on Save.
 
 <img width="303" alt="image" src="https://user-images.githubusercontent.com/84516667/198452226-e21d69da-1224-47d7-98f4-5409990e8102.png">    
 <img width="509" alt="image" src="https://user-images.githubusercontent.com/84516667/198452403-295bb356-6ee5-4a2b-9467-a8b0fc6f5e94.png">
 
+**Step 7: Create Prod ARM Template Deployment Task:**
 
 + Click on 1 job, 0 task and select the ARM template deployment task. Change resource group to prod resource group.
 + In Override template parameters, change factoryName to Prod, Storage account name and KeyVault url to Prod values. Click on Save.
+
+**Step 8: Define Pre-deployment Conditions:**
+
++ Go to Pipeline tab, click on <img width="22" alt="image" src="https://user-images.githubusercontent.com/84516667/198483462-8dd1cf9e-6975-4869-9955-778fbedfa4f2.png">
+ next to Prod stage. 
++ Enable Pre-deployment approvals and add either users or groups for approving the build. This prevents failure builds deployment to Prod. Add additional apporval policies if required. CLick on Save.
+
+<img width="520" alt="image" src="https://user-images.githubusercontent.com/84516667/198484853-e8fb258f-76bb-482a-98d7-9ee04abcc429.png">
 
 
 
