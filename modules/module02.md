@@ -19,7 +19,7 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 **Publishing Changes (Automated)**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 **Note**
-+ Earlier, user is responsible to manually publish changes to master branch by clicking on Publish button in ADF UI which is not automated. 
++ Earlier, user is responsible to manually publish changes to generate ARM templates by clicking on Publish button in ADF UI which is not automated. 
 + We now have a build process that uses a DevOps build pipeline.
 + The build pipeline uses the ADFUtilities NPM package, which will validate all the resources and generate the ARM templates. These templates can be single and linked.
 
