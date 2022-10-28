@@ -29,8 +29,8 @@
 		}   
   },
   "variables": {
-    "sqlServerName": "[concat(parameters('yourAlias'), uniqueString(resourceGroup().id), '-dev-server')]",
-    "databaseName": "[concat(parameters('yourAlias'),uniqueString(resourceGroup().id), '-dev-sqldb')]",
+    "sqlServerName": "[concat(uniqueString(resourceGroup().id), '-dev-server')]",
+    "databaseName": "[concat(uniqueString(resourceGroup().id), '-dev-sqldb')]",
     "databaseEdition": "Basic",
     "databaseCollation": "SQL_Latin1_General_CP1_CI_AS",
     "databaseServiceObjectiveName": "Basic"
