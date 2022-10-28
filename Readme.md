@@ -8,6 +8,11 @@ In this workshop we work on implementing continuous integration and continuous d
 
 To understand source control terminology, how branching works and highlevel ADF CI/CD lifecycle, refer [Understand terminology and Release Lifecycle](Files/CICD-Documentation.md)
 
+🤔 Prerequisites
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Before starting Lab Environment Setup, complete [Azure DevOps](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/DevOps-Prerequisites.md) configurations.  <br />
+
 **🧪 Lab Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 [Lab Environment](modules/module00.md)
