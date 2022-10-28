@@ -1,7 +1,7 @@
 **Module 03 - Release Lifecycle**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[< Previous Module](module03.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module05.md)
+[< Previous Module](module02.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module04.md)
 
 🤔 Prerequisites
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -80,4 +80,4 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 
 
-[Continue >](module05.md)
+[Continue >](module04.md)
