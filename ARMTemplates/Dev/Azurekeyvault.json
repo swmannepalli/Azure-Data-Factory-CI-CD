@@ -81,14 +81,14 @@
     }
   },
   "variables": {
-    "keyVaultName": "[concat(parameters('yourAlias'), '-dev-kv')]"
+    "keyVaultName": "[concat(parameters('yourAlias'), uniqueString(resourceGroup().id), '-dev-kv')]"
     
   },
   "resources": [
     {
       "type": "Microsoft.KeyVault/vaults",
       "apiVersion": "2021-11-01-preview",
-      "name": "[concat(parameters('yourAlias'), '-dev-kv')]",
+      "name": "[concat(parameters('yourAlias'), uniqueString(resourceGroup().id), '-dev-kv')]",
       "location": "[parameters('location')]",
       "properties": {
         "enabledForDeployment": "false",
