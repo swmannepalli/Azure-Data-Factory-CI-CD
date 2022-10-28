@@ -60,6 +60,10 @@ Once the pipeline is created, the pipeline name is automatically configured with
 + To merge changes back to Collaboration branch, expand the feature1 branch on the left top, and click on Create Pull Request. This will take you to the Azure DevOps page.  <br />
 + Provide Title and add reviewers if required. This is recommended approach so there are some other users who can validate your branch work to prevent any errors in main/collaboration branch. For this lab, you can skip it and click on Create and Complete. A pop up window appears, and it is best approach to delete feature1 branch after merging which helps in keeping the commit history and repo clean. Click on Complete Merge.  <br />
 
+<img width="805" alt="image" src="https://user-images.githubusercontent.com/84516667/198697459-ff5d5aa6-e35d-453d-b716-38c56c30c1dd.png">
+
+<img width="243" alt="image" src="https://user-images.githubusercontent.com/84516667/198697532-20399842-e6b1-4bb8-9c72-fac06e72238e.png">
+
 + This will automatically trigger the pipeline as there is a commit made to the master branch via pull request. On reviewing the Pipelines, you should see that the AzureDataFactory-CI pipeline is triggered as a result of merging the Pull request and completed successfully.
 
 <img width="788" alt="image" src="https://user-images.githubusercontent.com/84516667/198375182-30ad8a5d-e875-44ea-8fa6-4cd2a9f938a5.png">
