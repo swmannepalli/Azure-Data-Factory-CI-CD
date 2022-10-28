@@ -54,7 +54,8 @@ On reviewing the run, you should see something like below which shows that an ar
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/84516667/198375454-4796c6d3-349c-45ff-a693-90e5e1dd96f3.png">
 
 
-<img width="861" alt="image" src="https://user-images.githubusercontent.com/84516667/198360058-f8873426-6c25-485a-bcb3-1870d6f2bf41.png">
+<img width="1004" alt="image" src="https://user-images.githubusercontent.com/84516667/198444524-924e5f94-7fef-4e2d-917c-68daea1e7703.png">
+
 
 The completes setting up our build pipeline section. In the next section, we will be creating a release pipeline to deploy this on to Production.
 
