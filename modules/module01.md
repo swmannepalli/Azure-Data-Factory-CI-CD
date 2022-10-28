@@ -1,7 +1,7 @@
 **Module 02 - Data Factory Repository and Pipeline Setup**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[< Previous Module](module01.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module03.md)
+[< Previous Module](module00.md) - [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) - [Next Module >](module02.md)
 
 **Setting up Code Repository in Dev Data Factory**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,4 +52,4 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 + **Create Copy Activity** - For Source, select ADLS Gen2 Dataset. For Sink, select Azure SQL Database Dataset. Click on Save all to save all changes.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[Continue >](module03.md)
+[Continue >](module02.md)
