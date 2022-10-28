@@ -18,10 +18,17 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 
 **Publishing Changes (Automated)**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
+**Note**
++ Earlier, user is responsible to manually publish changes to master branch by clicking on Publish button in ADF UI which is not automated. 
++ We now have a build process that uses a DevOps build pipeline.
++ The build pipeline uses the ADFUtilities NPM package, which will validate all the resources and generate the ARM templates. These templates can be single and linked.
 
-+ To acheive automatic publishing of chnages to dev environment, we need to create a build pipeline using YAML that will package the artifacts for continuous integration whenever the code changes in master branch.
+**Steps**
 
-Login to https://dev.azure.com to open Azure DevOps. Navigate to the project where you have hosted the source code repository of Azure Data Factory V2 objects. To create a new pipeline under a project, Select Pipelines -> Create Pipeline. 
++ Add a [package.json](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/package.json) (Right click to open in new window) in a build folder in the same repository of your Data Factory resources. This file has Node and the npm packages that will be installed in later steps.
++ Create a build pipeline using YAML that will package the artifacts for continuous integration whenever the code changes in master branch.
+
++ Login to https://dev.azure.com to open Azure DevOps. Navigate to the project where you have hosted the source code repository of Azure Data Factory V2 objects. To create a new pipeline under a project, Select Pipelines -> Create Pipeline. 
 
 <img width="1467" alt="image" src="https://user-images.githubusercontent.com/84516667/198354721-ad29aedd-9f7e-4a9c-a608-8a1a1da9e52d.png">
 
@@ -29,12 +36,13 @@ Select Azure Repos Git as our code resides in Azure Repos and select the repo wh
 
 <img width="490" alt="image" src="https://user-images.githubusercontent.com/84516667/198354977-1c9eef72-dcbf-4435-bbd2-ec40ac7606c1.png"> <img width="500" alt="image" src="https://user-images.githubusercontent.com/84516667/198355031-d9443573-53d4-4f1e-be16-48eb3f9f5724.png">
 
-Copy the [this](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/d41c0db778ca6f49e7354f26039f625d09004b59/Files/azure-pipelines.yml) (Right click to open in new window) code and paste in the azure-pipelines.yml file and click Save. This will prompt you to commit the file to the repository. Select “commit directly to the master branch” option to commit this file. The commit message is already populated with a predefined message. Alternatively, you can write a custom commit message.
+Copy the code that is in your name from [here](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/Build-pipelines) (Right click to open in new window) and paste in the azure-pipelines.yml file and click Save. This will prompt you to commit the file to the repository. Select “commit directly to the master branch” option to commit this file. The commit message is already populated with a predefined message. Alternatively, you can write a custom commit message.
 
 Once the pipeline is created, the pipeline name is automatically configured with the project name. You can rename it to “AzureDataFactory-CI” to give a more meaningful name. 
 
 <img width="931" alt="image" src="https://user-images.githubusercontent.com/84516667/198374612-86ea6920-a2a6-4adb-8d92-7ba7c3ad6fdf.png">
 
++ The above yml file references package.json file 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Testing development lifecycle** <br />
