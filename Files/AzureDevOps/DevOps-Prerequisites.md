@@ -55,13 +55,16 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 
 <img width="149" alt="image" src="https://user-images.githubusercontent.com/84516667/198499277-9d01c1e0-e001-4642-b6bd-cf2989be15a5.png">
 
-+ Under Pipelines, select Service connections --> New service connection
++ Under Pipelines, select Service connections --> New service connection/ Create Service Connection
 
 <img width="908" alt="image" src="https://user-images.githubusercontent.com/84516667/198499398-eb353a36-274d-4cbe-86c4-8b3647e217a2.png">
 
-+ Select Azure Resource Manager, clcik on Next. Select Service principal (automatic) and click on Next.
-+ Select Scope level as Subscription, select Non-prod subscription. Leave Resource group value as empty as we don't want to limit this connection to one single resource group.
-+ Provide Service connection name and click on Save.
++ Select Azure Resource Manager, clcik on Next at the bottom. Select Service principal (automatic) and click on Next.
+
+<img width="290" alt="image" src="https://user-images.githubusercontent.com/84516667/198656134-4b64be39-299a-423a-b75b-7610125c6c54.png">
+
++ Select Scope level as Subscription, select your Non-prod subscription. Leave Resource group value as empty as we don't want to limit this connection to one single resource group.
++ Provide Service connection name (For Example, youralias_NonProd) and click on Save.
 
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/84516667/198500438-ee545df0-f98e-4bbe-9715-7bf2026cd9a3.png">
 
