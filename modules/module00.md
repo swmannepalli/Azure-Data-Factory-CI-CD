@@ -70,10 +70,9 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 After going through the above steps, you should see something similar to the following in the resource group {youralias}-dev-rg and {youralias}-prod-rg. <br />
 
 
-<img width="763" alt="image" src="https://user-images.githubusercontent.com/84516667/198171592-001f27a5-2c77-4ebb-ae9c-2fd7175f9ef7.png"> <br />
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/84516667/198691512-87018710-02df-4421-8bf4-f9df6af3d9b7.png"> <br />
 
-<img width="762" alt="image" src="https://user-images.githubusercontent.com/84516667/198171663-0ecd3d9e-b080-4fb7-803e-221c8702d6f6.png">
-
+<img width="979" alt="image" src="https://user-images.githubusercontent.com/84516667/198691409-66b2e8cc-4729-4b6c-9ff1-92d0bef93735.png">
 
 If you do not have the required permissions to fulfil these pre-requisites or need assistance, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
 
