@@ -9,7 +9,7 @@
 We can setup the code repository while creating the data factory by checking the enable Git box or after creation of Data Factory.
 In this lab, we're setting up the repository after creation of Data Factory. Launch Dev Data Factory Studio, go to Author. Select “Set up code repository” from the Data Factory drop-down list as shown below,
 
-![image](https://user-images.githubusercontent.com/84516667/197676259-5c381c3d-fbe5-4040-ace2-d7fabb21dfa2.png)
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/84516667/198691866-6710c770-c121-4e12-84bd-7e229ee44a8f.png">
 
 
 **Configure a repository**
