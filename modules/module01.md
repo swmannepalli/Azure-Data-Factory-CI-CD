@@ -15,7 +15,7 @@ In this lab, we're setting up the repository after creation of Data Factory. Lau
 **Configure a repository**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-+ Select Repository type as Azure DevOps Git and select your Azure Active Directory. Click on Continue.
++ Select Repository type as Azure DevOps Git and select your Azure Active Directory (Prod/Non-Prod). Click on Continue.
 + Under Select repository, select your DevOps organization name from the drop down. Select Project and Repository name from the drop down.
 + Create a new Collaboration branch by name "master"
 + Publish branch defaults to adf_publish.
