@@ -39,11 +39,13 @@ Now that we've completed development lifecycle where publish branch has all the 
 **Step 4 - Create ARM Template Deployment Task for Dev:**
 
 + Now, we need to add a task to provide dev environment details. Click on the 1 job, 0 task under Prod Stage, click on '+' next to Agent job and search for Arm Template deployment and click on add. Select the job to fill out the configurations. 
-+ For Azure Resource Manager Connection, select your subscription where Prod Data Factory is deployed and click on Authorize.
-+ Once the authoriztion is complete, select the Subscription, Resource group and Location of Prod Data Factory.
++ For Azure Resource Manager Connection, select your subscription where Dev Data Factory is deployed and click on Authorize.
++ Once the authoriztion is complete, select the Subscription, Resource group and Location of Dev Data Factory.
 + For Template, browse and select ARMTemplateForFactory file.
 + For Template parameters, browse and select ARMTemplateParametersForFactory file.
-+ Clcik on elipses next to Override template parameters and change factory name to Prod factory name and AzureKeyVault Url to Prod Url, Azure DataLakeStorage dev account name to Prod account name. Click on Ok and Save.
++ Clcik on elipses next to Override template parameters and paste below parameters. Click on Ok and Save.
+
+          -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage_kv_Ls_properties_typeProperties_url "https://swmannepallidevadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://swmannepalli18-dev-kv.vault.azure.net/"
 
 <img width="995" alt="image" src="https://user-images.githubusercontent.com/84516667/197865546-1650f2eb-4b97-4926-9947-3d689f2dcf81.png">
 
