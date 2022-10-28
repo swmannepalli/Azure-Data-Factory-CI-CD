@@ -81,7 +81,7 @@
     }
   },
   "variables": {
-    "keyVaultName": "[concat(parameters('yourAlias'), uniqueString(resourceGroup().id), '-dev-kv')]"
+    "keyVaultName": "[concat(uniqueString(resourceGroup().id), '-dev-kv')]"
     
   },
   "resources": [
