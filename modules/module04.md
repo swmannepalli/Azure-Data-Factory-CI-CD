@@ -17,7 +17,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 **Release Pipeline Steps:**
 
-<img width="929" alt="image" src="https://user-images.githubusercontent.com/84516667/197865729-3543728f-3570-468d-a17e-583a44c9406b.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/84516667/198480634-7b0ed26c-c1e8-4884-9043-92f8891ca840.png">
 
 **Step 1 - Create a release pipeline:**
 
