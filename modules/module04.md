@@ -47,7 +47,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 
           -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage_kv_Ls_properties_typeProperties_url "https://swmannepallidevadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://swmannepalli18-dev-kv.vault.azure.net/"
 
-<img width="995" alt="image" src="https://user-images.githubusercontent.com/84516667/197865546-1650f2eb-4b97-4926-9947-3d689f2dcf81.png">
+<img width="801" alt="image" src="https://user-images.githubusercontent.com/84516667/198449616-ab59dd02-fb90-4916-b005-baa9f372a5a5.png">
 
 **Step 5 - Define Trigger for Continuous Deployment :**
 
