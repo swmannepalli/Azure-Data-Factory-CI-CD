@@ -11,9 +11,15 @@ You need to complete [Lab Environment Setup](module00.md)&ensp;  [Create a proje
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Now, that the deployment workflow and creation of release pipelines is complete, let's test CI/CD part.
-+ Go to Data Factory studio, make any change to the pipeline. For example, changing name of the pipeline. Validate the change and make sure there are no errors and Publish it (assuming you're in main branch). This is only for testing purpose. It is not recommended to make any changes in main branch directly.
-+ Publish the changes by clicking on Publish button. As soon as ARM template generation completes, go to Azure DevOps project --> Pipelines --> Releases. You should see build is initiated automatically.
++ Go to Data Factory studio, create another feature branch and make some changes to pipeline. For example, changing name of the pipeline. Validate the change and make sure there are no errors, Save all. Create a pull request by clicking on drop down next to branch name.
++ This will take you to Azure DevOps page, click on Create, Complete and Complete Merge. This will start the build pipeline to gather artifacts and create arm templates.
 
-<img width="1020" alt="image" src="https://user-images.githubusercontent.com/84516667/197869665-1e1aac53-33ec-44b2-a4dd-c643a4ea4fda.png">
+<img width="797" alt="image" src="https://user-images.githubusercontent.com/84516667/198489443-741d9cfc-a508-45e1-ae38-299192bc9b17.png">
 
-+ Once build completes successfully, go to Prod Data Factory and ensure all dev artifacts are deployed in Prod.
++ As we've enable continuous deployment trigger whenever changes are made to master branch, release pipeline for Dev starts automatically. Once that succeedes, approvers will get notification to approve Prod build.
++ Once approvals are done, prod deployment will start.
++ Once deployment completes successfully, go to Prod Data Factory and ensure all dev artifacts are deployed in Prod.
+
+<img width="647" alt="image" src="https://user-images.githubusercontent.com/84516667/198491298-8714bb9e-6712-455d-95fb-09078e11fa95.png">
+
+
