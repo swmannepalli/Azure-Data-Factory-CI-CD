@@ -23,7 +23,7 @@
 	},
     "variables": {
         "storageAccountApiVersion": "[utils.apiVersion('Microsoft.Storage', 'storageAccounts')]",
-        "storageAccountName": "[concat(parameters('yourAlias'), 'devadls')]",
+        "storageAccountName": "[concat(parameters('yourAlias'),uniqueString(resourceGroup().id), 'devadls')]",
         "storageAccountResourceId": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
 	"containerName": "devopsworkshop"
     },
