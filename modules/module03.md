@@ -49,7 +49,7 @@ Once the pipeline is created, the pipeline name is automatically configured with
 
 <img width="788" alt="image" src="https://user-images.githubusercontent.com/84516667/198375182-30ad8a5d-e875-44ea-8fa6-4cd2a9f938a5.png">
 
-On reviewing the run, you should see something like below which shows that an artefact is published and clicking that, we should be able to view the files present in that.
+On reviewing the run, you should see something like below which shows that an artifact is published and clicking that, we should be able to view the files present in that.
 
 <img width="792" alt="image" src="https://user-images.githubusercontent.com/84516667/198375454-4796c6d3-349c-45ff-a693-90e5e1dd96f3.png">
 
