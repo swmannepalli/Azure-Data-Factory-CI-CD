@@ -41,16 +41,14 @@ Select Azure Repos Git as our code resides in Azure Repos and select the repo wh
 
 <img width="490" alt="image" src="https://user-images.githubusercontent.com/84516667/198354977-1c9eef72-dcbf-4435-bbd2-ec40ac7606c1.png"> <img width="500" alt="image" src="https://user-images.githubusercontent.com/84516667/198355031-d9443573-53d4-4f1e-be16-48eb3f9f5724.png">
 
-Copy the code that is in your name from [here](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/Build-pipelines) (Right click to open in new window) and paste in the azure-pipelines.yml file and click Save. This will prompt you to commit the file to the repository. Select “commit directly to the master branch” option to commit this file. The commit message is already populated with a predefined message. Alternatively, you can write a custom commit message.
+Copy the code that is in your name from [here](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/Build-pipelines) (Right click to open in new window) and paste in the azure-pipelines.yml file (here we reference package.json file) and click Save. This will prompt you to commit the file to the repository. Select “commit directly to the master branch” option to commit this file. The commit message is already populated with a predefined message. Alternatively, you can write a custom commit message.
 
 <img width="798" alt="image" src="https://user-images.githubusercontent.com/84516667/198696378-4d90796b-9b74-4bf4-81d9-99f34b718259.png">
-
 
 Once the pipeline is created, the pipeline name is automatically configured with the project name. Select Pipelines to view the newly created pipeline. You can rename it to “AzureDataFactory-CI” to give a more meaningful name. 
 
 <img width="931" alt="image" src="https://user-images.githubusercontent.com/84516667/198374612-86ea6920-a2a6-4adb-8d92-7ba7c3ad6fdf.png">
 
-+ The above yml file references package.json file 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Testing development lifecycle** <br />
