@@ -4,7 +4,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Account and Organization created in Azure Devops. 
-+ If not, follow [this](https://learn.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) tutorial to sign up. You can provide your Non-Prod credentials and can skip step 1.
++ If not, follow [this](https://learn.microsoft.com/en-us/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops) tutorial to sign up (Click on Start free). Organization name is automatically populated, click on create.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -28,6 +28,11 @@ These steps are for individuals who already have their Organization linked to Pr
 + Under General, click on Azure Active Directory and click on Switch directory. Under Azure Active Directory drop-down, select Microsoft Non-Production and click on Connect.
 
 <img width="923" alt="image" src="https://user-images.githubusercontent.com/84516667/198496987-0bd052cd-992e-471d-8a87-a6528697cef8.png">
+
+If you get Connection Failed that says policy does not allow guest users --> Toggle on External guest access under Security --> Policies.
+
+<img width="467" alt="image" src="https://user-images.githubusercontent.com/84516667/198654344-2f5a2432-0c2d-4443-9e12-746cca7fe05e.png">
+
 
 + You've to sign out and sign in back with same account credentials. Now, your organization is connected to the Microsoft Non-Production directory.
 
