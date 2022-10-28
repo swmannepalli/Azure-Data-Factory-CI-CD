@@ -37,7 +37,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 <img width="1016" alt="image" src="https://user-images.githubusercontent.com/84516667/198362310-2ffad3f7-890d-4d18-a05c-2a18540be2c6.png">
 
 
-**Step 4 - Create ARM Template Deployment Task:**
+**Step 4 - Create ARM Template Deployment Task for Dev:**
 
 + Now, we need to add a task to provide destination environment details i.e., Prod Data Factory environment. Click on the 1 job, 0 task under Prod Stage, click on '+' next to Agent job and search for Arm Template deployment and click on add. Select the job to fill out the configurations. 
 + For Azure Resource Manager Connection, select your subscription where Prod Data Factory is deployed and click on Authorize.
