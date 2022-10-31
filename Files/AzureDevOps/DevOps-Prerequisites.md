@@ -16,10 +16,8 @@
 3. Create ARM Service connection to Non-Prod subscription - A Service Connection is required for Azure DevOps Continuous Build and Continuous Release Pipelines to talk to external and remote services and execute tasks. If you want to understand what happens when you create an ARM serice connection, check [this](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops#what-happens-when-you-create-an-arm-service-connection)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-**Step 1: Add Non-Prod Subscription**
+**Step 1: Add Non-Prod Subscription** (You can skip this step if you want to use Prod tenant)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
-These steps are for individuals who already have their Organization linked to Prod directory.
 
 + Login to https://dev.azure.com to open Azure DevOps and go to Organization settings (bottom left)
 
@@ -48,7 +46,7 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 <img width="322" alt="image" src="https://user-images.githubusercontent.com/84516667/198498472-db51107b-79bd-474f-bb94-976fffe66e2f.png">
 
 
-**Step 3: Create ARM Service connection to Non-Prod subscription**
+**Step 3: Create ARM Service connection to Non-Prod subscription** (Use same steps to add Service Connection to Prod if you don't have one)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Go to the project created above, and select Project settings.
@@ -63,7 +61,7 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 
 <img width="290" alt="image" src="https://user-images.githubusercontent.com/84516667/198656134-4b64be39-299a-423a-b75b-7610125c6c54.png">
 
-+ Select Scope level as Subscription, select your Non-prod subscription. Leave Resource group value as empty as we don't want to limit this connection to one single resource group.
++ Select Scope level as Subscription, select your Non-prod subscription (If you choose Prod tenant, select Prod subscription). Leave Resource group value as empty as we don't want to limit this connection to one single resource group.
 + Provide Service connection name (For Example, youralias_NonProd) and click on Save.
 
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/84516667/198500438-ee545df0-f98e-4bbe-9715-7bf2026cd9a3.png">
