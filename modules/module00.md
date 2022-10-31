@@ -28,7 +28,7 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 		 + {youralias}-dev-rg  <br />
 	* Choose the region that is most appropriate to your current location.
 	
-2. **Resources Deployment:**  Make a note of SQL User Password as these are needed in later steps. Check if the directory is pointing to Non-Prod when clicked on Deploy buttons, if not, switch directory.
+2. **Resources Deployment:**  Make a note of SQL User Password as these are needed in later steps. Check if the directory is pointing to current subscription when clicked on Deploy buttons, if not, switch directory.
 
 	+ **Deploy ADLS, ADF and Azure SQL resources in Dev Resource Group** -  Right-click or Ctrl + click the button below to open the Azure Portal in a new window and deploy resources in Dev Resource group created above. <br />	
 
