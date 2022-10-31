@@ -41,8 +41,8 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 	  **Parameter Values**  <br />
 		- User ObjectId - Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value.
 		- ADF ObjectId - Go to Dev ADF created above --> Managed Identities --> copy Object Id.
-		- Azure Sqlsecret Value - Go to {youralias}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
-		- Adlssecret Value - {youralias}devadls --> Access Keys --> Click on Show for Key1 and copy    	
+		- Azure Sqlsecret Value - Go to {uniquestring}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
+		- Adlssecret Value - {uniquestring}devadls --> Access Keys --> Click on Show for Key1 and copy    	
 
 🧪 **Lab Prod Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -64,8 +64,8 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 	  **Parameter Values**  <br />
 		- User ObjectId - Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value.
 		- ADF ObjectId - Go to Prod ADF created above --> Managed Identities --> copy Object Id.
-		- Azure Sqlsecret Value - Go to {youralias}-prod-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
-		-  Adlssecret Value - {youralias}prodadls --> Access Keys --> Click on Show for Key1 and copy
+		- Azure Sqlsecret Value - Go to {uniquestring}-prod-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
+		-  Adlssecret Value - {uniquestring}prodadls --> Access Keys --> Click on Show for Key1 and copy
 	
 After going through the above steps, you should see something similar to the following in the resource group {youralias}-dev-rg and {youralias}-prod-rg. <br />
 
