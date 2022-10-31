@@ -29,7 +29,7 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 
 <img width="473" alt="image" src="https://user-images.githubusercontent.com/84516667/198694704-6aed558c-9340-4471-a836-f493ad842c25.png">
 
-Name it as package.json and copy [package.json](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/package.json) (Right click to open in new window) code and paste in the file. Click on Commit and then commit again.
+Name it as package.json and copy [package.json](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/package.json) (Right click to open in new window) code and replace contents in the file with copied code. Click on Commit and then commit again.
 
 + Create a build pipeline using YAML that will package the artifacts for continuous integration whenever the code changes in master branch.
 
