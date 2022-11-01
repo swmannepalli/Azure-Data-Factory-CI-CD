@@ -54,7 +54,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 <img width="807" alt="image" src="https://user-images.githubusercontent.com/84516667/199148285-808e0d2b-81b6-4d14-b325-6ddb001f283e.png">
 
-+ For Override template parameters, paste below content. Click on Ok and Save. Change data factory name, Storage account name and KeyVault name.
++ For Override template parameters, paste below content. Change data factory name, Storage account name and KeyVault name. Click on Ok and Save. 
 
           -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage_kv_Ls_properties_typeProperties_url "https://swmannepallidevadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://swmannepalli18-dev-kv.vault.azure.net/"
 
