@@ -51,7 +51,7 @@ Once the pipeline is created, the pipeline name is automatically configured with
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Testing development lifecycle** <br />
+**Creating Pull Request and merging changes to master branch** <br />
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
