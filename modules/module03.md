@@ -24,6 +24,9 @@ Now that we've completed development lifecycle where publish branch has all the 
 + Login to https://dev.azure.com to open Azure DevOps and navigate to the project where you have hosted the source code repository of Azure Data Factory V2 --> Pipelines --> Releases. Click on New pipeline
 + Let's start with Empty job --> Under Select a template, click on Empty job. 
 
+<img width="803" alt="image" src="https://user-images.githubusercontent.com/84516667/199147110-15741fee-e90d-4131-a244-a9504ca3358b.png">
+
+
 **Step 2 - Add Stage - Dev:**
 
 + Provide Stage name (this is environment name), in this lab it is going to be Dev as we want to first deploy the changes to Data Factory mode in Dev ADF v2. (Remember, the changes are still in the Git mode in master branch). Click on Save and Ok.
