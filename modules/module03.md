@@ -42,11 +42,19 @@ Now that we've completed development lifecycle where publish branch has all the 
 **Step 4 - Create Dev ARM Template Deployment Task:**
 
 + Now, we need to add a task to provide dev environment details. Click on the 1 job, 0 task under Prod Stage, click on '+' next to Agent job and search for Arm Template deployment and click on add. Select the job to fill out the configurations. 
+
+<img width="929" alt="image" src="https://user-images.githubusercontent.com/84516667/199147347-3cabe5d5-77a2-4bf3-a520-7b1621afcfcd.png">
+<img width="811" alt="image" src="https://user-images.githubusercontent.com/84516667/199147414-b9ea2103-bbfd-4908-98ca-b5796e168b94.png">
+
+
 + For Azure Resource Manager Connection, select your subscription where Dev Data Factory is deployed and click on Authorize.
 + Once the authoriztion is complete, select the Subscription, Resource group and Location of Dev Data Factory.
 + For Template, browse and select ARMTemplateForFactory file.
 + For Template parameters, browse and select ARMTemplateParametersForFactory file.
-+ Clcik on elipses next to Override template parameters and paste below parameters. Click on Ok and Save.
+
+<img width="807" alt="image" src="https://user-images.githubusercontent.com/84516667/199148285-808e0d2b-81b6-4d14-b325-6ddb001f283e.png">
+
++ For Override template parameters, paste below content. Click on Ok and Save. Change data factory name, Storage account name and KeyVault name.
 
           -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage_kv_Ls_properties_typeProperties_url "https://swmannepallidevadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://swmannepalli18-dev-kv.vault.azure.net/"
 
