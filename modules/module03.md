@@ -64,10 +64,11 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 + On the Pipeline tab, click on  &ensp; <img width="25" alt="image" src="https://user-images.githubusercontent.com/84516667/197866710-9b0b9d6c-db3d-4ef9-914d-c20367e09eb5.png">  &ensp; icon in Artifacts section, toggle Continuous deployment trigger to enable it.
 + Under Branch filters, click on Add to include a branch from where a release will be triggered only if the Git push contains a commit on the specified branch. For example, selecting "main" will trigger a release for a Git push which contains one or more commits to the main branch. To trigger a release for any commit to branches under features/, enter "features/*". To trigger a release for commits to all branches, enter "*". Note that all specified filters will be OR'ed. For example, an artifact matching at least one filter condition would be sufficient to trigger a release.
-+ Select adf_publsih branch and click on Save and Ok. 
-+ Now, everytime we publish the code from Data Factory, arm template will be updated in adf_publish branch which will trigger deployment to Prod Data Factory.
++ Select master branch and click on Save and Ok. 
++ Now, everytime we create a pull request from feature branch to merge changes to master branch, build pipeline generates artifacts and with enabling this trigger, artifacts are automatically deployed to Dev environment. 
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/84516667/197867697-bcdfbfd0-58b3-45bf-a180-8a77c37f364d.png">
+<img width="788" alt="image" src="https://user-images.githubusercontent.com/84516667/199149573-f07baffb-0cb9-4a53-b6bb-996bb60a8bef.png">
+
 
 **Step 6: Clone Stage: Prod:**
 
