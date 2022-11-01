@@ -54,9 +54,9 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 <img width="807" alt="image" src="https://user-images.githubusercontent.com/84516667/199148285-808e0d2b-81b6-4d14-b325-6ddb001f283e.png">
 
-+ For Override template parameters, paste below content. Change data factory name, Storage account name and KeyVault name. Click on Ok and Save. 
++ For Override template parameters, paste below content. Change data factory name, Storage account name and KeyVault name. Click on Ok and Save. Make sure linked service names for storage account and key vault matches with what you created in ADF.
 
-          -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage1_kv_Ls_properties_typeProperties_url "https://swmannepallidevadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://swmannepalli18-dev-kv.vault.azure.net/"
+          -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage1_properties_typeProperties_url "https://tgv3tmw6lj224devadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://tgv3tmw6lj224-dev-kv-dev-kv.vault.azure.net/"
 
 <img width="801" alt="image" src="https://user-images.githubusercontent.com/84516667/198449616-ab59dd02-fb90-4916-b005-baa9f372a5a5.png">
 
