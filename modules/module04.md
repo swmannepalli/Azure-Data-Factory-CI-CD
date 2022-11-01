@@ -11,7 +11,11 @@ You need to complete [Lab Environment Setup](module00.md)&ensp;  [Create a proje
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Now, that the development workflow and creation of release pipelines is complete, let's test CI/CD.
-+ Go to Data Factory studio, refersh page as feature1 branch no longer exists (we deleted this branch as part of our create pull request - merge changes to master in module02) create another feature branch and make some changes to pipeline. For example, changing name of the pipeline. Validate the change and make sure there are no errors, Save all. Create a pull request by clicking on drop down next to branch name.
++ Go to Data Factory studio, refersh page as feature1 branch no longer exists (we deleted this branch as part of our create pull request - merge changes to master in module02) create another feature branch.
+
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/84516667/199150700-3e4e7f18-6c2a-4359-84dc-2b7062af664b.png">
+
++ Make some changes to pipeline. For example, changing name of the pipeline. Validate the change and make sure there are no errors, Save all. Create a pull request by clicking on drop down next to branch name.
 + This will take you to Azure DevOps page, click on Create, Complete and Complete Merge. This will start the build pipeline to gather artifacts and create arm templates.
 
 <img width="797" alt="image" src="https://user-images.githubusercontent.com/84516667/198489443-741d9cfc-a508-45e1-ae38-299192bc9b17.png">
