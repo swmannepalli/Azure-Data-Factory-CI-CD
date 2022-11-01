@@ -86,7 +86,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 
 + Go to Pipeline tab, click on <img width="22" alt="image" src="https://user-images.githubusercontent.com/84516667/198483462-8dd1cf9e-6975-4869-9955-778fbedfa4f2.png">
  next to Prod stage. 
-+ Enable Pre-deployment approvals and add either users or groups for approving the build. This prevents failure builds deployment to Prod. Add additional apporval policies if required. CLick on Save.
++ Enable Pre-deployment approvals and add either users or groups for approving the build. This prevents failure builds deployment to Prod. Add additional apporval policies if required. Click on Save.
 
 <img width="520" alt="image" src="https://user-images.githubusercontent.com/84516667/198484853-e8fb258f-76bb-482a-98d7-9ee04abcc429.png">
 
