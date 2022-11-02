@@ -59,7 +59,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 + Format for Azure KeyVault parameter --> KeyVaultLinkedServiceName_properties_typeProperties_baseurl
 + Click on Ok and Save. 
 
-          -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage1_properties_typeProperties_url "https://tgv3tmw6lj224devadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://tgv3tmw6lj224-dev-kv-dev-kv.vault.azure.net/"
+          -factoryName "swmannepalli-dev-adf" -AzureDataLakeStorage1_properties_typeProperties_url "https://tgv3tmw6lj224devadls.dfs.core.windows.net/" -AzureKeyVault1_properties_typeProperties_baseUrl "https://tgv3tmw6lj224-dev-kv.vault.azure.net/"
 
 <img width="801" alt="image" src="https://user-images.githubusercontent.com/84516667/198449616-ab59dd02-fb90-4916-b005-baa9f372a5a5.png">
 
