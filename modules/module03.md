@@ -47,7 +47,7 @@ Now that we've completed development lifecycle where publish branch has all the 
 <img width="811" alt="image" src="https://user-images.githubusercontent.com/84516667/199147414-b9ea2103-bbfd-4908-98ca-b5796e168b94.png">
 
 
-+ For Azure Resource Manager Connection, select your subscription where Dev Data Factory is deployed and click on Authorize.
++ For Azure Resource Manager Connection, select Select the Azure Resource Manager service connection having access to the selected deployment scope. This is the service connection created as part of [Azure DevOps pre-requisite](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/26e36eed3a0bdd61134eb572d60363277cec70e4/Files/AzureDevOps/DevOps-Prerequisites.md)
 + Once the authoriztion is complete, select the Subscription, Resource group and Location of Dev Data Factory.
 + For Template, browse and select ARMTemplateForFactory file.
 + For Template parameters, browse and select ARMTemplateParametersForFactory file.
