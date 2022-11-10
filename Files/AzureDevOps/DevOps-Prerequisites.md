@@ -78,5 +78,10 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 
 <img width="698" alt="image" src="https://user-images.githubusercontent.com/84516667/201190398-8385360f-9c55-48d5-9d69-e7c2a922bceb.png">
 
+If you don't have a free tier, you can request this grant by submitting a [request](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR63mUWPlq7NEsFZhkyH8jChUMlM3QzdDMFZOMkVBWU5BWFM3SDI2QlRBSC4u)
+
+Note: You can select either Public or Private project depending on your usage.
+
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/84516667/201203577-98b94d93-4034-49c2-8796-c74af07a5092.png">
 
 [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD)
