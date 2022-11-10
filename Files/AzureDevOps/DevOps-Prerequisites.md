@@ -14,7 +14,7 @@
 1. Adding Add Non-Prod Subscription to existing organization - All resources required for this lab will be created in Non-Prod. 
 2. Creating Azure DevOps project
 3. Create ARM Service connection to Non-Prod subscription - A Service Connection is required for Azure DevOps Continuous Build and Continuous Release Pipelines to talk to external and remote services and execute tasks. If you want to understand what happens when you create an ARM serice connection, check [this](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops#what-happens-when-you-create-an-arm-service-connection)
-4. Check if your ogranization has free tier parallel jobs assigned --> 
+4. Check if your ogranization has free tier Microsoft hosted parallel jobs assigned, if not submit a request. Refer [this](https://microsoft.seismic.com/share/PTVT8mQ8WgGGHWTWJVHhHq3DbVD) link to understand more on parallel jobs.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 **Step 1: Add Non-Prod Subscription** (You can skip this step if you want to use Prod tenant)
@@ -66,5 +66,17 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 + Provide Service connection name (For Example, youralias_NonProd) and click on Save.
 
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/84516667/198500438-ee545df0-f98e-4bbe-9715-7bf2026cd9a3.png">
+
+**Step 4: Checking Microsoft hosted Parallel jobs (Free tier)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Login to https://dev.azure.com to open Azure DevOps. Select your Organization and click on Organization Settings. 
+
+<img width="208" alt="image" src="https://user-images.githubusercontent.com/84516667/201188357-27fcb1c7-3e4b-4daf-868b-333572957d90.png">
+
+2. Select Parallel jobs under pipelines and check if you see Microsoft-hosted Free tier parallel jobs as shown in the screenshot below,
+
+<img width="698" alt="image" src="https://user-images.githubusercontent.com/84516667/201190398-8385360f-9c55-48d5-9d69-e7c2a922bceb.png">
+
 
 [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD)
