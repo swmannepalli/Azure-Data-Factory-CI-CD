@@ -14,6 +14,7 @@
 1. Adding Add Non-Prod Subscription to existing organization - All resources required for this lab will be created in Non-Prod. 
 2. Creating Azure DevOps project
 3. Create ARM Service connection to Non-Prod subscription - A Service Connection is required for Azure DevOps Continuous Build and Continuous Release Pipelines to talk to external and remote services and execute tasks. If you want to understand what happens when you create an ARM serice connection, check [this](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops#what-happens-when-you-create-an-arm-service-connection)
+4. Check if your ogranization has free tier parallel jobs assigned --> 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 **Step 1: Add Non-Prod Subscription** (You can skip this step if you want to use Prod tenant)
