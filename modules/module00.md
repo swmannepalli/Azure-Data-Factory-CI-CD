@@ -39,7 +39,7 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 		[![Deploy Dev KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FAzurekeyvault.json)
 		
 	  **Parameter Values**  <br />
-		- User ObjectId - Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value.
+		- User ObjectId - Go to [this link](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/6362896e2d689c95916170ad7acd33a8ee126a6b/Files/ObjectIds/JoshLeeTeam/NonProd-Object-IDs.md) in this repo and get your respective Object ID value from your team folder.
 		- ADF ObjectId - Go to Dev ADF created above --> Managed Identities --> copy Object Id.
 		- Azure Sqlsecret Value - Go to {uniquestring}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
 		- Adlssecret Value - {uniquestring}devadls --> Access Keys --> Click on Show for Key1 and copy    	
@@ -62,7 +62,7 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 		[![Deploy Prod KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FProd%2FAzurekeyvault.json)
 	
 	  **Parameter Values**  <br />
-		- User ObjectId - Go to Azure-Data-Factory-CI-CD/TeamMembers-Object-IDs.md in this repo and get your respective Object ID value.
+		- User ObjectId -  Go to [this link](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/6362896e2d689c95916170ad7acd33a8ee126a6b/Files/ObjectIds/JoshLeeTeam/NonProd-Object-IDs.md) in this repo and get your respective Object ID value from your team folder.
 		- ADF ObjectId - Go to Prod ADF created above --> Managed Identities --> copy Object Id.
 		- Azure Sqlsecret Value - Go to {uniquestring}-prod-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
 		-  Adlssecret Value - {uniquestring}prodadls --> Access Keys --> Click on Show for Key1 and copy
