@@ -67,7 +67,8 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/84516667/198500438-ee545df0-f98e-4bbe-9715-7bf2026cd9a3.png">
 
-**Step 4: Checking Microsoft hosted Parallel jobs (Free tier)
+
+Step 4: Checking Microsoft hosted Parallel jobs (Free tier)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Login to https://dev.azure.com to open Azure DevOps. Select your Organization and click on Organization Settings. 
