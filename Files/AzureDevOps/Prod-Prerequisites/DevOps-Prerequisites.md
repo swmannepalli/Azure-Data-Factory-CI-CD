@@ -27,7 +27,7 @@
 <img width="322" alt="image" src="https://user-images.githubusercontent.com/84516667/198498472-db51107b-79bd-474f-bb94-976fffe66e2f.png">
 
 
-**Step 2: Create ARM Service connection to Non-Prod subscription** 
+**Step 2: Create ARM Service connection to Prod subscription** 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Go to the project created above, and select Project settings.
