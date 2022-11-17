@@ -31,7 +31,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(Build.Repository.LocalPath)' #replace with the package.json folder
-    customCommand: 'run build validate $(Build.Repository.LocalPath) /subscriptions/5d0b323f-eee0-425f-800d-3dbe273a1c88/resourceGroups/azoladej-dev-rg/providers/Microsoft.DataFactory/factories/azoladej-dev-adf'
+    customCommand: 'run build validate $(Build.Repository.LocalPath) /subscriptions/e754ee44-2186-4306-bd4b-f34f3d70f518/resourceGroups/yungc-dev-rg/providers/Microsoft.DataFactory/factories/yungc-dev-adf'
   displayName: 'Validate'
 
 # Validate and then generate the ARM template into the destination folder, which is the same as selecting "Publish" from the UX.
@@ -41,7 +41,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(Build.Repository.LocalPath)' #replace with the package.json folder
-    customCommand: 'run build export $(Build.Repository.LocalPath) /subscriptions/5d0b323f-eee0-425f-800d-3dbe273a1c88/resourceGroups/azoladej-dev-rg/providers/Microsoft.DataFactory/factories/azoladej-dev-adf "ArmTemplate"'
+    customCommand: 'run build export $(Build.Repository.LocalPath) /subscriptions/e754ee44-2186-4306-bd4b-f34f3d70f518/resourceGroups/yungc-dev-rg/providers/Microsoft.DataFactory/factories/yungc-dev-adf "ArmTemplate"'
   displayName: 'Validate and Generate ARM template'
 
 # Publish the artifact to be used as a source for a release pipeline.
