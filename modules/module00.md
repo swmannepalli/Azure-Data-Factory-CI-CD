@@ -1,4 +1,4 @@
-**Module 00 - Dev Lab Environment Setup**
+**Module 00 - Lab Environment Setup**
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
  [Home](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD) -  [Next Module (Create project in Azure DevOps) >](module01.md)
 
@@ -44,5 +44,36 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 		- Azure Sqlsecret Value - Go to {uniquestring}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
 		- Adlssecret Value - {uniquestring}devadls --> Access Keys --> Click on Show for Key1 and copy    	
 
+🧪 **Lab Prod Environment Setup**
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. **Create Resource Group** - Reference Document [Create Resource Group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) <br />
+
+	* Create a Resource Group with the following naming convention (do not forget to use your alias):<br />
+		 + {youralias}-prod-rg  <br />
+	* Choose the region that is most appropriate to your current location. <br />
+2. **Resources Deployment:**  Make a note of SQL User Password as it is needed in later steps.
+
+	 + **Deploy ADLS, ADF and Azure SQL resources in Prod Resource Group** - Right-click or Ctrl + click the button below to open the Azure Portal in a new window and deploy resources in Prod Resource group created above. <br />	
+
+		[![Deploy Prod Resources to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FProd%2FMainARMTemplate.json)
+		
+	+ **Deploy Azure KeyVault** - Right-click or Ctrl + click the button below to open the Azure Portal in a new window to deploy Azure KeyVault. <br />
+	
+		[![Deploy Prod KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FProd%2FAzurekeyvault.json)
+	
+	  **Parameter Values**  <br />
+		- User ObjectId -  Go to [this link](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/6362896e2d689c95916170ad7acd33a8ee126a6b/Files/ObjectIds/) in this repo and get your respective Object ID value from your team folder.
+		- ADF ObjectId - Go to Prod ADF created above --> Managed Identities --> copy Object Id.
+		- Azure Sqlsecret Value - Go to {uniquestring}-prod-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
+		-  Adlssecret Value - {uniquestring}prodadls --> Access Keys --> Click on Show for Key1 and copy
+	
+After going through the above steps, you should see something similar to the following in the resource group {youralias}-dev-rg and {youralias}-prod-rg. <br />
+
+
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/84516667/198691512-87018710-02df-4421-8bf4-f9df6af3d9b7.png"> <br />
+
+<img width="979" alt="image" src="https://user-images.githubusercontent.com/84516667/198691409-66b2e8cc-4729-4b6c-9ff1-92d0bef93735.png">
+
+If you do not have the required permissions to fulfil these pre-requisites or need assistance, please e-mail swmannepalli@microsoft.com to ensure a successful lab experience.
 
  [Continue >](module01.md)
