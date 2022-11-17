@@ -17,7 +17,7 @@
 4. Check if your ogranization has free tier Microsoft hosted parallel jobs assigned, if not submit a request. Refer [this](https://microsoft.seismic.com/share/PTVT8mQ8WgGGHWTWJVHhHq3DbVD) link to understand more on parallel jobs.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-**Step 1: Add Non-Prod Subscription** (You can skip this step if you want to use Prod tenant)
+**Step 1: Add Non-Prod Subscription**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Login to https://dev.azure.com to open Azure DevOps and go to Organization settings (bottom left)
@@ -47,7 +47,7 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 <img width="322" alt="image" src="https://user-images.githubusercontent.com/84516667/198498472-db51107b-79bd-474f-bb94-976fffe66e2f.png">
 
 
-**Step 3: Create ARM Service connection to Non-Prod subscription** (Use same steps to add Service Connection to Prod if you don't have one)
+**Step 3: Create ARM Service connection to Non-Prod subscription** 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Go to the project created above, and select Project settings.
