@@ -44,6 +44,9 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 		- Azure Sqlsecret Value - Go to {uniquestring}-dev-sqldb --> Connection Strings --> Copy ADO.NET (SQL authentication). Make sure to replace the  password.
 		- Adlssecret Value - {uniquestring}devadls --> Access Keys --> Click on Show for Key1 and copy    	
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 🧪 **Lab Prod Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 1. **Create Resource Group** - Reference Document [Create Resource Group](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups) <br />
