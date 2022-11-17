@@ -11,32 +11,12 @@
 ## :dart: Objectives
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1. Adding Add Non-Prod Subscription to existing organization - All resources required for this lab will be created in Non-Prod. 
-2. Creating Azure DevOps project
-3. Create ARM Service connection to Non-Prod subscription - A Service Connection is required for Azure DevOps Continuous Build and Continuous Release Pipelines to talk to external and remote services and execute tasks. If you want to understand what happens when you create an ARM serice connection, check [this](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops#what-happens-when-you-create-an-arm-service-connection)
-4. Check if your ogranization has free tier Microsoft hosted parallel jobs assigned, if not submit a request. Refer [this](https://microsoft.seismic.com/share/PTVT8mQ8WgGGHWTWJVHhHq3DbVD) link to understand more on parallel jobs.
+1. Creating Azure DevOps project
+2. Create ARM Service connection to Non-Prod subscription - A Service Connection is required for Azure DevOps Continuous Build and Continuous Release Pipelines to talk to external and remote services and execute tasks. If you want to understand what happens when you create an ARM serice connection, check [this](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops#what-happens-when-you-create-an-arm-service-connection)
+3. Check if your ogranization has free tier Microsoft hosted parallel jobs assigned, if not submit a request. Refer [this](https://microsoft.seismic.com/share/PTVT8mQ8WgGGHWTWJVHhHq3DbVD) link to understand more on parallel jobs.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-**Step 1: Add Non-Prod Subscription** (You can skip this step if you want to use Prod tenant)
----------------------------------------------------------------------------------------------------------------------------------------------------------
-
-+ Login to https://dev.azure.com to open Azure DevOps and go to Organization settings (bottom left)
-
-<img width="472" alt="image" src="https://user-images.githubusercontent.com/84516667/198496246-ad47fe65-9c7b-4a49-8aa8-cb0aea3a6735.png">
-
-+ Under General, click on Azure Active Directory and click on Switch directory. Under Azure Active Directory drop-down, select Microsoft Non-Production and click on Connect.
-
-<img width="923" alt="image" src="https://user-images.githubusercontent.com/84516667/198496987-0bd052cd-992e-471d-8a87-a6528697cef8.png">
-
-If you get Connection Failed that says policy does not allow guest users --> Toggle on External guest access under Security --> Policies.
-
-<img width="467" alt="image" src="https://user-images.githubusercontent.com/84516667/198654344-2f5a2432-0c2d-4443-9e12-746cca7fe05e.png">
-
-
-+ You've to sign out and sign in back with same account credentials. Now, your organization is connected to the Microsoft Non-Production directory.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------
-**Step 2: Create Azure DevOps Project**
+**Step 1: Create Azure DevOps Project**
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 + Login to https://dev.azure.com to open Azure DevOps. Make sure your organization is selected on top left side. Click on New project.
 
@@ -47,7 +27,7 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 <img width="322" alt="image" src="https://user-images.githubusercontent.com/84516667/198498472-db51107b-79bd-474f-bb94-976fffe66e2f.png">
 
 
-**Step 3: Create ARM Service connection to Non-Prod subscription** (Use same steps to add Service Connection to Prod if you don't have one)
+**Step 2: Create ARM Service connection to Non-Prod subscription** 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 + Go to the project created above, and select Project settings.
@@ -62,8 +42,8 @@ If you get Connection Failed that says policy does not allow guest users --> Tog
 
 <img width="290" alt="image" src="https://user-images.githubusercontent.com/84516667/198656134-4b64be39-299a-423a-b75b-7610125c6c54.png">
 
-+ Select Scope level as Subscription, select your Non-prod subscription (If you choose Prod tenant, select Prod subscription). Leave Resource group value as empty as we don't want to limit this connection to one single resource group.
-+ Provide Service connection name (For Example, youralias_NonProd) and click on Save.
++ Select Scope level as Subscription, select your Prod subscription. Leave Resource group value as empty as we don't want to limit this connection to one single resource group.
++ Provide Service connection name (For Example, youralias_Prod) and click on Save.
 
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/84516667/198500438-ee545df0-f98e-4bbe-9715-7bf2026cd9a3.png">
 
