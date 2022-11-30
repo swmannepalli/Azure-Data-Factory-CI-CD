@@ -11,7 +11,7 @@ To understand source control terminology, how branching works and highlevel ADF 
 🤔 Prerequisites
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Before starting Lab Environment Setup, complete [Azure DevOps](Files/AzureDevOps/DevOps-Prerequisites.md) configurations.  <br />
+Before starting Lab Environment Setup, complete [Azure DevOps](https://github.com/swmannepalli/Azure-Data-Factory-CI-CD/blob/1a07439f85c475ed8188db34d3a1553475e9e5fc/Files/AzureDevOps/Prod-Prerequisites/DevOps-Prerequisites.md) configurations.  <br />
 
 **🧪 Lab Environment Setup**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
