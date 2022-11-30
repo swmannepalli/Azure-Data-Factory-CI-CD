@@ -25,7 +25,7 @@ You need to complete [Module 00 - Lab Environment Setup](module00.md) and [Modul
 
 **Steps**
 
-+ Add package.json file in the same repository of your Data Factory resources. This file has Node and the npm packages that will be installed in later steps.
++ Login to https://dev.azure.com to open Azure DevOps. Go to your project and add package.json file in the same repository of your Data Factory resources. This file has Node and the npm packages that will be installed in later steps.
 
 <img width="473" alt="image" src="https://user-images.githubusercontent.com/84516667/198694704-6aed558c-9340-4471-a836-f493ad842c25.png">
 
