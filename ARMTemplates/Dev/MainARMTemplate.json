@@ -5,9 +5,7 @@
         "yourAlias": {
             "type": "String"
         },
-	    "storageAccountName": {
-		    "type": "String"
-	    },
+	    
 		"storageAccountType": {
 		"type": "String",
 		"defaultValue": "Standard_LRS",
@@ -66,8 +64,8 @@
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
-                    "storageAccountName": {
-                        "value": "[parameters('storageAccountName')]"
+                    "yourAlias": {
+                        "value": "[parameters('yourAlias')]"
                     }
                 }
             }
