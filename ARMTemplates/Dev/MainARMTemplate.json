@@ -22,7 +22,10 @@
 		},
 		"sqlAdministratorLoginPassword": 
 		{
-		  "type": "securestring"
+		  "type": "securestring",
+			"metadata": {
+		  "description": "The length of the password should be equal to or greater than 8 characters.The password should not contain the username whose password you are going to set.The password should contain Latin uppercase letters(A to Z).It should container Latin lowercase letters(a to z).Numeric values(0 to 9)"
+			}
 		},
 		"transparentDataEncryption": 
 		{
