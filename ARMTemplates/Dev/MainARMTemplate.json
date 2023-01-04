@@ -64,7 +64,7 @@
                 },
                 "parameters": {
                     "yourAlias": {
-                        "value": "[parameters('yourAlias')]"
+                        "value": "[parameters('storageAccountName')]"
                     }
                 }
             }
