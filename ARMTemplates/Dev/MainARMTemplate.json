@@ -5,6 +5,9 @@
         "yourAlias": {
             "type": "String"
         },
+	    "storageAccountName": {
+		    "type": "String"
+	    },
 		"storageAccountType": {
 		"type": "String",
 		"defaultValue": "Standard_LRS",
