@@ -2,13 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-   
-    "storageAccountName": {
-      "type": "String",
-      "metadata": {
-        "description": "Specifies the name of the Azure Storage account."
-      }
-    },
+   "yourAlias": {
+		"type":"String"
+		},
     "containerName": {
       "defaultValue": "devopsworkshop",
       "type": "String",
@@ -24,11 +20,16 @@
       }
     }
   },
+  "variables": {
+        
+        "storageAccountName": "[concat(parameters('yourAlias'), 'devadls')]",
+        
+    },
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2022-05-01",
-      "name": "[concat(parameters('storageAccountName'), 'dev')]",
+      "name": "[variables('storageAccountName')]",
       "location": "[parameters('location')]",
       "sku": {
         "name": "Standard_LRS"
@@ -42,9 +43,9 @@
     {
       "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
       "apiVersion": "2022-05-01",
-      "name": "[format('{0}/default/{1}', parameters('storageAccountName'), parameters('containerName'))]",
+      "name": "[format('{0}/default/{1}', variables('storageAccountName'), parameters('containerName'))]",
       "dependsOn": [
-        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName'))]"
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
       ]
     }
   ]
