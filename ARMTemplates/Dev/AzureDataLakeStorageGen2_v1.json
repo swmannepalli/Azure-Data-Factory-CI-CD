@@ -9,7 +9,7 @@
       }
     },
     "containerName": {
-      "defaultValue": "logs",
+      "defaultValue": "devopsworkshop",
       "type": "String",
       "metadata": {
         "description": "Specifies the name of the blob container."
