@@ -48,7 +48,8 @@
     "variables": {
         
 		"AzureSQLDbprodtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Prod/AzureSQLDatabase.json",
-		"ADFtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Prod/DataFactory.json"
+		"ADFtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Prod/DataFactory.json",
+	    "storageprodtemplatelink": "https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Prod/AzureDataLakeStorageGen2_v1.json"
     },
     "resources": [
         {
