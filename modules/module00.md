@@ -34,6 +34,10 @@ In order to follow along with the ADF DevOps integration lab exercises, you need
 
 		[![Deploy Dev Resources to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FMainARMTemplate.json) 
 		
+		[![Deploy Dev Resources to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/swmannepalli/Azure-Data-Factory-CI-CD/main/ARMTemplates/Dev/MainARMTemplate.json) 
+		
+		
+		
 	+ **Deploy Azure KeyVault**  - Right-click or Ctrl + click the button below to open the Azure Portal in a new window to deploy Azure KeyVault. <br />
 	
 		[![Deploy Dev KV to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fswmannepalli%2FAzure-Data-Factory-CI-CD%2Fmain%2FARMTemplates%2FDev%2FAzurekeyvault.json)
