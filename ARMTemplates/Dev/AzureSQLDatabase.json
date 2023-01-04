@@ -11,7 +11,10 @@
 		},
 		"sqlAdministratorLoginPassword": 
 		{
-		  "type": "securestring"
+		  "type": "securestring",
+		"Constraints": {
+			"ValidationRule":"^(?=[^a-z]*[a-z])(?=[^A-Z]*[A-Z])(?=\D*\d)(?=[^!#%]*[!#%])[A-Za-z0-9!#%]{8,15}$"
+		}
 		},
 		"transparentDataEncryption": 
 		{
