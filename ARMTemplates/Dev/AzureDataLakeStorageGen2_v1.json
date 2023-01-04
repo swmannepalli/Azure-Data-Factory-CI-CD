@@ -22,7 +22,7 @@
   },
   "variables": {
         
-        "storageAccountName": "[concat(parameters('yourAlias'), 'devadls')]",
+        "storageAccountName": "[concat(parameters('yourAlias'), 'devadls')]"
         
     },
   "resources": [
